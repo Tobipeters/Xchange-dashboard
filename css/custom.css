@@ -1,0 +1,24 @@
+.img-list-center{
+    display: block;
+    margin: -60px auto 0;
+}
+.bg-main-color{
+    background: linear-gradient(90deg, #F12711 0%, #FD7201 100%);
+}
+.cash-bold{
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: 500;
+}
+.acct-tab .nav-link{
+    background: #fff !important;
+    color: #000 !important;
+}
+.acct-tab .nav-item .active{
+    background: #F1F1F1 !important;
+}
+@media screen and (max-width:600px){
+    .cash-bold{
+        font-size: 1.5rem;
+    }
+}

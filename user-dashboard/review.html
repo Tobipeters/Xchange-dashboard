@@ -9,7 +9,7 @@
     <meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
     <meta name="author" content="Bootlab">
 
-    <title>Xchange | User-Dashboard </title>
+    <title>User-Dashboard | Review </title>
 
     <!-- PICK ONE OF THE STYLES BELOW -->
     <link href="../css/modern.css" rel="stylesheet">
@@ -48,13 +48,13 @@
                             <span class="align-middle">Dashboards</span>
                         </a>
                     </li>
-                    <li class="sidebar-item active">
+                    <li class="sidebar-item">
                         <a href="order.html" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="shopping-cart"></i>
                             <span class="align-middle">Orders</span>
                         </a>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item active">
                         <a href="review.html" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="star"></i>
                             <span class="align-middle">Ratings &amp; Reviews</span>
@@ -197,12 +197,12 @@
                     <div class="d-flex justify-content-between">
                         <div class="header mb-3">
                             <h1 class="header-title">
-                                Orders
+                                Reviews &amp; Ratings
                             </h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="dashboard-default.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Order</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Reviews &amp; Ratings</li>
                                 </ol>
                             </nav>
                         </div>
@@ -214,7 +214,7 @@
                         <div class="col">
                             <div class="card shadow-none w-100">
                                 <div class="card-header px-4">
-                                    <h5 class="card-title">ORDERS</h5>
+                                    <h5 class="card-title">Reviews and Ratings</h5>
                                     <h6 class="card-subtitle text-muted">This is the record of all your orders till date
                                     </h6>
                                 </div>
@@ -233,7 +233,7 @@
                                                 <label class="d-inline">entries</label>
                                             </div>
                                         </div>
-                                        <div class="col-sm-12 col-md-6">
+                                        <div class="col-sm-12 col-md-6 pr-0">
                                             <div id="datatables-basic_filter"
                                                 class="dataTables_filter d-flex justify-content-end">
                                                 <label class="d-inline mr-2 mb-0">Search:</label>
@@ -246,51 +246,51 @@
                                         style="width:100%">
                                         <thead>
                                             <tr>
-                                                <th class="pl-4">Order ID</th>
-                                                <th>Amount</th>
-                                                <th>Date Purchased </th>
-                                                <th>Order Type</th>
-                                                <th>Order Status</th>
+                                                <th class="pl-4">#</th>
+                                                <th>Vendor</th>
+                                                <th>Rating </th>
+                                                <th>Comment</th>
+                                                <th>Date Reviewed</th>
                                                 <th class="pr-4">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="pl-4">#1983990</td>
+                                                <td class="pl-4">1</td>
                                                 <td>
-                                                    &#8358;1,000
+                                                        Yanzu Spot
                                                 </td>
-                                                <td>22/01/2020</td>
+                                                <td>1/5</td>
                                                 <td>
-                                                    deal (3)
+                                                        Lorem ipsum dolor sit amet
                                                 </td>
                                                 <td>
-                                                    <span class="badge badge-warning">New</span>
+                                                    22/02/2020
                                                 </td>
                                                 <td class="pr-4">
-                                                    <a href="single-order.html" class="btn btn-outline-dark">
-                                                        More
+                                                    <a href="#" class="btn btn-outline-dark">
+                                                        View Vendor
                                                     </a>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="pl-4">#1983990</td>
-                                                <td>
-                                                    &#8358;1,000
-                                                </td>
-                                                <td>22/01/2020</td>
-                                                <td>
-                                                    Event (1), Deals (3), On-Display (2), Experiences (10)
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-danger">Cancelled</span>
-                                                </td>
-                                                <td class="pr-4">
-                                                    <a href="single-order.html" class="btn btn-outline-dark">
-                                                        More
-                                                    </a>
-                                                </td>
-                                            </tr>
+                                                    <td class="pl-4">2</td>
+                                                    <td>
+                                                            Yanzu Spot
+                                                    </td>
+                                                    <td>1/5</td>
+                                                    <td>
+                                                            Lorem ipsum dolor sit amet
+                                                    </td>
+                                                    <td>
+                                                        22/02/2020
+                                                    </td>
+                                                    <td class="pr-4">
+                                                        <a href="#" class="btn btn-outline-dark">
+                                                            View Vendor
+                                                        </a>
+                                                    </td>
+                                                </tr>
 
                                         </tbody>
 
