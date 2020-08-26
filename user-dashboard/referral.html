@@ -10,7 +10,8 @@
     <meta name="author" content="Bootlab">
 
     <title>User-Dashboard | Account </title>
-
+    <!-- roboto font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <!-- PICK ONE OF THE STYLES BELOW -->
     <link href="../css/modern.css" rel="stylesheet">
     <!-- Custom styling Link below -->
@@ -24,45 +25,45 @@
 
     <!-- Convert Modal -->
     <div class="modal fade" id="convertModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header px-4">
-                        <h5 class="modal-title">Convert your coin to wallet balance</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title">Convert your coin to wallet balance</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="mx-auto text-center">
+                        <h5 class="mb-0">Xchange Coin Balance</h5>
+                        <p class="cash-bold mb-0">210</p>
                     </div>
-                    <div class="modal-body p-4">
-                        <div class="mx-auto text-center">
-                            <h5 class="mb-0">Xchange Coin Balance</h5>
-                            <p class="cash-bold mb-0">210</p>
-                        </div>
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <label>Input coins to convert</label>
-                                    <input class="form-control form-control-lg rounded-0 " type="text" placeholder="₦200" />
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <label>Wallet Equivalent</label>
-                                    <input class="form-control form-control-lg rounded-0 " type="text"
-                                        placeholder="₦2000" />
-                                </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label>Input coins to convert</label>
+                                <input class="form-control form-control-lg rounded-0 " type="text" placeholder="₦200" />
                             </div>
-                            <button type="submit" class="btn bg-main-color rounded-0 my-2 text-light px-4">
-                                Convert
-                            </button>
-                        </form>
-    
-                        <div>
-                            <p class="mb-0 mt-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-                                quasi architecto beatae vitae dicta sunt explicabo</p>
+                            <div class="col-md-6 form-group">
+                                <label>Wallet Equivalent</label>
+                                <input class="form-control form-control-lg rounded-0 " type="text"
+                                    placeholder="₦2000" />
+                            </div>
                         </div>
+                        <button type="submit" class="btn bg-main-color rounded-0 my-2 text-light px-4">
+                            Convert
+                        </button>
+                    </form>
+
+                    <div>
+                        <p class="mb-0 mt-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                            quasi architecto beatae vitae dicta sunt explicabo</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     <div class="splash active">
         <div class="splash-icon"></div>
@@ -271,8 +272,9 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <h4 class="text-muted ">Referral Earning</h4>
-                                                <p class="text-lg">2000 Points</p>
-                                                <button data-toggle="modal" data-target="#convertModal" class="btn btn-light">Convert to wallet balance</button>
+                                                <p class="ref-text-xlg">2000 Points</p>
+                                                <button data-toggle="modal" data-target="#convertModal"
+                                                    class="btn btn-light">Convert to wallet balance</button>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="d-flex justify-content-between mt-4">
@@ -282,7 +284,8 @@
                                                         <i class="align-middle" data-feather="facebook"></i>
                                                     </div>
                                                 </div>
-                                                <div class="badge badge-light text-wrap text-dark px-4 py-3 d-block mt-3 mb-4">
+                                                <div
+                                                    class="badge badge-light text-wrap text-dark px-4 py-3 d-block mt-3 mb-4">
                                                     https://;llkhjsflksjhfskmnsdlhfsknksns
                                                 </div>
                                                 <button class="btn btn-outline-danger mx-auto d-block">Copy
@@ -295,15 +298,15 @@
                                         <div class="row mb-4">
                                             <div class="col-md-4">
                                                 <h6 class="text-muted mb-1">Referral Earning</h6>
-                                                <p>200</p>
+                                                <p class="text-lg">200</p>
                                             </div>
                                             <div class="col-md-4">
                                                 <h6 class="text-muted mb-1">Referral Count</h6>
-                                                <p>240</p>
+                                                <p class="text-lg">240</p>
                                             </div>
                                             <div class="col-md-4">
                                                 <h6 class="text-muted mb-1">Signups from referrals</h6>
-                                                <p>44</p>
+                                                <p class="text-lg">44</p>
                                             </div>
                                         </div>
                                     </div>
@@ -320,8 +323,9 @@
                                                     sollicitudin laoreet viverra, tortor libero sodales leo.
                                                 </p>
                                                 <p class="card-text">
-                                                        Lorem ipsum dolor sit amet, manda adipiscing elit. Phasellus hendrerit. Pellentesque
-                                                    </p>
+                                                    Lorem ipsum dolor sit amet, manda adipiscing elit. Phasellus
+                                                    hendrerit. Pellentesque
+                                                </p>
 
                                             </div>
                                         </div>

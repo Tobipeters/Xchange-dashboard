@@ -17,6 +17,11 @@
 .acct-tab .nav-item .active{
     background: #F1F1F1 !important;
 }
+.ref-text-xlg{
+    font-size: 2rem;
+    font-weight: 500;
+
+}
 @media screen and (max-width:600px){
     .cash-bold{
         font-size: 1.5rem;
