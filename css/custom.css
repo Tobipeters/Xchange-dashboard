@@ -22,8 +22,22 @@
     font-weight: 500;
 
 }
+.bold-text{
+    font-weight: 600 !important;
+}
 @media screen and (max-width:600px){
     .cash-bold{
         font-size: 1.5rem;
+    }
+    /* justify right for mobile screen */
+    .justify-right-sm{
+        justify-content: start !important;
+    }
+    /* Vendor dashboard>>>>>>>>>>Single-order */
+    .second-list{
+        padding-right: 1rem !important;
+    }
+    .first-list .list-group-item .row p:last-child, .second-list .list-group-item .row p:last-child{
+        text-align: left !important;
     }
 }
