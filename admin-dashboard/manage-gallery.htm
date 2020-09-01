@@ -9,7 +9,7 @@
     <meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
     <meta name="author" content="Bootlab">
 
-    <title>Admin-Dashboard | Vendors Category</title>
+    <title>Admin-Dashboard | Manage Vendor Gallery</title>
 
     <!-- roboto font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -376,13 +376,13 @@
                     <div class="row mx-0 mb-md-4 mb-sm-4">
                         <div class="col-md-6 header mb-0">
                             <h1 class="header-title mb-2">
-                                Vendor Categories
+                                Manage Vendor Gallery
                             </h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item"><a href="vendor.html">All Vendors</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Vendor Categories</li>
+                                    <li class="breadcrumb-item"><a href="vendor.html">Single Vendor</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Manage Vendor Gallery</li>
                                 </ol>
                             </nav>
                         </div>
@@ -399,19 +399,19 @@
                         <div class="col-md-6">
                             <div class="card shadow w-100">
                                 <div class="card-header border-bottom py-3">
-                                    <h5 class="my-1 bold-text">VENDOR CATEGORY</h5>
+                                    <h5 class="my-1 bold-text">NEW VENDOR GALLERY</h5>
                                 </div>
                                 <div class="card-body ">
                                     <form class="py-3">
                                         <div class="form-group">
-                                            <label for="firstName">Category Name:</label>
-                                            <input class="form-control form-control-lg rounded-0 bg-light" type="text">
-                                        </div>
-                                        <div class="row">
-                                            <div class="col form-group">
-                                                <label for="firstName">Add Sub-Categories::</label>
-                                                <textarea class="form-control rounded-0 bg-light" rows="5"
-                                                    placeholder="Textarea"></textarea>
+                                            <label for="firstName">Upload Image:</label>
+                                            <div class="form-control form-control-lg p-0 thumbnail-container bg-light">
+                                                <div class="upload-icon">
+                                                    <img src="../img/upload-icon.png" class="w-100">
+                                                </div>
+                                                <input
+                                                    class="form-control form-control-lg rounded-0 bg-light input-thumbnail"
+                                                    type="file">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -421,7 +421,7 @@
                                             </select>
                                         </div>
                                         <button type="submit" class="btn bg-main-color rounded-0 my-2 text-light px-4">
-                                            Update
+                                            Upload
                                         </button>
                                     </form>
 
@@ -431,7 +431,7 @@
                         <div class="col-md-6">
                             <div class="card shadow-none w-100">
                                 <div class="card-header px-4">
-                                    <h5 class="card-title bold-text">ALL VENDOR CATEGORIES</h5>
+                                    <h5 class="card-title bold-text">VENDOR GALLERY</h5>
                                     <h6 class="card-subtitle text-muted">
                                         This is the record of all vendors
                                     </h6>
@@ -442,8 +442,7 @@
                                         <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th>Category Name</th>
-                                                <th>No of Sub-Categories</th>
+                                                <th>Thumbnail</th>
                                                 <th>Status</th>
                                                 <th>Actions</th>
                                             </tr>
@@ -451,65 +450,41 @@
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
-                                                <td>Travel & Lifestyle</td>
-                                                <td>22</td>
+                                                <td>
+                                                    <img src="../img//photos/unsplash-1.jpg" height="35" width="35"
+                                                        class="rounded-circle mr-2" />
+                                                </td>
                                                 <td> Active</td>
                                                 <td>
-                                                    <a class="btn btn-outline-dark dropdown-toggle" id="moreDropdown"
-                                                        data-toggle="dropdown">
+                                                    <a class="btn btn-outline-dark">
                                                         More
                                                     </a>
-                                                    <div class="dropdown-menu dropdown-menu-right"
-                                                        aria-labelledby="moreDropdown">
-                                                        <a class="dropdown-item border-bottom" href="#">
-                                                            Edit Category
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Delete
-                                                        </a>
-                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>Travel & Lifestyle</td>
-                                                <td>22</td>
+                                                <td>
+                                                    <img src="../img//photos/unsplash-1.jpg" height="35" width="35"
+                                                        class="rounded-circle mr-2" />
+                                                </td>
                                                 <td> Active</td>
                                                 <td>
-                                                    <a class="btn btn-outline-dark dropdown-toggle" id="moreDropdown"
-                                                        data-toggle="dropdown">
+                                                    <a class="btn btn-outline-dark">
                                                         More
                                                     </a>
-                                                    <div class="dropdown-menu dropdown-menu-right"
-                                                        aria-labelledby="moreDropdown">
-                                                        <a class="dropdown-item border-bottom" href="#">
-                                                            Edit Category
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Delete
-                                                        </a>
-                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
-                                                <td>Travel & Lifestyle</td>
-                                                <td>22</td>
+                                                <td>
+                                                    <img src="../img//photos/unsplash-1.jpg" height="35" width="35"
+                                                        class="rounded-circle mr-2" />
+                                                </td>
                                                 <td> Active</td>
                                                 <td>
-                                                    <a class="btn btn-outline-dark dropdown-toggle" id="moreDropdown"
-                                                        data-toggle="dropdown">
+                                                    <a class="btn btn-outline-dark">
                                                         More
                                                     </a>
-                                                    <div class="dropdown-menu dropdown-menu-right"
-                                                        aria-labelledby="moreDropdown">
-                                                        <a class="dropdown-item border-bottom" href="#">
-                                                            Edit Category
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Delete
-                                                        </a>
-                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>

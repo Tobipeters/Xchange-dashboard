@@ -9,7 +9,7 @@
     <meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
     <meta name="author" content="Bootlab">
 
-    <title>Admin-Dashboard | Vendors Category</title>
+    <title>Admin-Dashboard | Approve settlement</title>
 
     <!-- roboto font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -17,6 +17,8 @@
     <link href="../css/modern.css" rel="stylesheet">
     <!-- Custom styling Link below -->
     <link href="../css/custom.css" rel="stylesheet">
+    <!-- Sliding plugin  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 
     <script src="../js/settings.js"></script>
 
@@ -72,12 +74,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sidebar-item active">
+                    <li class="sidebar-item">
                         <a href="#vendor" data-toggle="collapse" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="users"></i>
                             <span class="align-middle">Vendor</span>
                         </a>
-                        <ul id="vendor" class="sidebar-dropdown list-unstyled show " data-parent="#sidebar">
+                        <ul id="vendor" class="sidebar-dropdown list-unstyled collapse" data-parent="#sidebar">
                             <li class="sidebar-item">
                                 <a class="sidebar-link" href="vendor.html">All Vendors</a>
                             </li>
@@ -216,7 +218,7 @@
                             <span class="align-middle">Coupons</span>
                         </a>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item active">
                         <a href="settlement.html" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="share-2"></i>
                             <span class="align-middle">Settlements</span>
@@ -376,13 +378,13 @@
                     <div class="row mx-0 mb-md-4 mb-sm-4">
                         <div class="col-md-6 header mb-0">
                             <h1 class="header-title mb-2">
-                                Vendor Categories
+                                    Approve settlement
                             </h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item"><a href="vendor.html">All Vendors</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Vendor Categories</li>
+                                    <li class="breadcrumb-item"><a href="settlement.html">Settlement</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Approve settlement</li>
                                 </ol>
                             </nav>
                         </div>
@@ -395,130 +397,117 @@
                     </div>
 
                     <!-- First Single Order List -->
-                    <div class="row mx-0 pb-5 mb-5">
-                        <div class="col-md-6">
+                    <div class="row mx-0">
+                        <div class="col-md-8">
+                            <ul class="list-group mb-5 w-100 first-list shadow">
+                                <li class="list-group-item">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="pt-2 bold-text">Settlement Details</h5>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Vendor Name:</p>
+                                        <p class="col-md-6 text-right mb-0">House of Faaji</p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Vendor ID:</p>
+                                        <p class="col-md-6 text-right mb-0">#907530</p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Amount Requested:</p>
+                                        <p class="col-md-6 text-right mb-0">N20,000</p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Date Requested:</p>
+                                        <p class="col-md-6 text-right mb-0">22/12/2020</p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Status:</p>
+                                        <p class="col-md-6 text-right mb-0">Pending</p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Current Value:</p>
+                                        <p class="col-md-6 text-right mb-0">N200,000</p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Bank Name:</p>
+                                        <p class="col-md-6 text-right mb-0"> GT bank</p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Account Name:</p>
+                                        <p class="col-md-6 text-right mb-0"> Naiaralnd Tobi</p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Account Number:</p>
+                                        <p class="col-md-6 text-right mb-0">464644454</p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Account Type:</p>
+                                        <p class="col-md-6 text-right mb-0"> Savings</p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Comment:</p>
+                                        <p class="col-md-6 text-right mb-0">loreim ipsum dolor sit amet was </p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="mb-5">
+                                <button class="btn bg-main-color text-light mr-3 rounded-0">Approve</button>
+                                <button class="btn btn-outline-dark rounded-0">Decline</button>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
                             <div class="card shadow w-100">
                                 <div class="card-header border-bottom py-3">
-                                    <h5 class="my-1 bold-text">VENDOR CATEGORY</h5>
+                                    <h5 class="my-1 bold-text">Settlement Statistics</h5>
                                 </div>
                                 <div class="card-body ">
-                                    <form class="py-3">
-                                        <div class="form-group">
-                                            <label for="firstName">Category Name:</label>
-                                            <input class="form-control form-control-lg rounded-0 bg-light" type="text">
-                                        </div>
-                                        <div class="row">
-                                            <div class="col form-group">
-                                                <label for="firstName">Add Sub-Categories::</label>
-                                                <textarea class="form-control rounded-0 bg-light" rows="5"
-                                                    placeholder="Textarea"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="lastName">Status:</label>
-                                            <select class="form-control form-control-lg   rounded-0 bg-light">
-                                                <option>Active</option>
-                                            </select>
-                                        </div>
-                                        <button type="submit" class="btn bg-main-color rounded-0 my-2 text-light px-4">
-                                            Update
-                                        </button>
-                                    </form>
+                                    <ul class="list-group mb-5 w-100">
+                                        <li class="list-group-item border-0  px-0">
+                                            <p class="mb-1 bold-text">Total Value Sold -> All Time</p>
+                                            <p class="mb-0">24</p>
+                                        </li>
+                                        <li class="list-group-item border-0  px-0">
+                                            <p class="mb-1 bold-text">Current Value Sold</p>
+                                            <p class="mb-0">24</p>
+                                        </li>
+                                        <li class="list-group-item border-0  px-0">
+                                            <p class="mb-1 bold-text">Total Settlements Received</p>
+                                            <p class="mb-0">4/5</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card shadow-none w-100">
-                                <div class="card-header px-4">
-                                    <h5 class="card-title bold-text">ALL VENDOR CATEGORIES</h5>
-                                    <h6 class="card-subtitle text-muted">
-                                        This is the record of all vendors
-                                    </h6>
-                                </div>
-                                <div class="card-body">
-                                    <table id="datatables-basic-one" class="table table-hover  text-sm"
-                                        style="width:100%">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>Category Name</th>
-                                                <th>No of Sub-Categories</th>
-                                                <th>Status</th>
-                                                <th>Actions</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Travel & Lifestyle</td>
-                                                <td>22</td>
-                                                <td> Active</td>
-                                                <td>
-                                                    <a class="btn btn-outline-dark dropdown-toggle" id="moreDropdown"
-                                                        data-toggle="dropdown">
-                                                        More
-                                                    </a>
-                                                    <div class="dropdown-menu dropdown-menu-right"
-                                                        aria-labelledby="moreDropdown">
-                                                        <a class="dropdown-item border-bottom" href="#">
-                                                            Edit Category
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Delete
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Travel & Lifestyle</td>
-                                                <td>22</td>
-                                                <td> Active</td>
-                                                <td>
-                                                    <a class="btn btn-outline-dark dropdown-toggle" id="moreDropdown"
-                                                        data-toggle="dropdown">
-                                                        More
-                                                    </a>
-                                                    <div class="dropdown-menu dropdown-menu-right"
-                                                        aria-labelledby="moreDropdown">
-                                                        <a class="dropdown-item border-bottom" href="#">
-                                                            Edit Category
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Delete
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Travel & Lifestyle</td>
-                                                <td>22</td>
-                                                <td> Active</td>
-                                                <td>
-                                                    <a class="btn btn-outline-dark dropdown-toggle" id="moreDropdown"
-                                                        data-toggle="dropdown">
-                                                        More
-                                                    </a>
-                                                    <div class="dropdown-menu dropdown-menu-right"
-                                                        aria-labelledby="moreDropdown">
-                                                        <a class="dropdown-item border-bottom" href="#">
-                                                            Edit Category
-                                                        </a>
-                                                        <a class="dropdown-item" href="#">
-                                                            Delete
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                     
                         </div>
                     </div>
 
+                 
 
 
 

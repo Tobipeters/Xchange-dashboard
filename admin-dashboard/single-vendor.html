@@ -17,12 +17,17 @@
     <link href="../css/modern.css" rel="stylesheet">
     <!-- Custom styling Link below -->
     <link href="../css/custom.css" rel="stylesheet">
+    <!-- Sliding plugin  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 
     <script src="../js/settings.js"></script>
 
 </head>
 
 <body>
+
+    <!-- carousel script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <div class="splash active">
         <div class="splash-icon"></div>
     </div>
@@ -62,10 +67,10 @@
                         </a>
                         <ul id="users" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
                             <li class="sidebar-item">
-                                <a class="sidebar-link" href="#">User 1</a>
+                                <a class="sidebar-link" href="user.html">All Users</a>
                             </li>
                             <li class="sidebar-item">
-                                <a class="sidebar-link" href="#">User 2</a>
+                                <a class="sidebar-link" href="create-user.html">Create New User</a>
                             </li>
                         </ul>
                     </li>
@@ -564,6 +569,28 @@
                                     <h5 class="my-1 bold-text">Profile Picture</h5>
                                 </div>
                                 <div class="card-body ">
+                                    <div class="card border-0 box-shadow">
+                                        <div class="card-header">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="cz-carousel cz-controls-static cz-dots-enabled cz-dots-light cz-dots-inside"
+                                                style="max-width: 50rem;">
+                                                <div class="cz-carousel-inner"
+                                                    data-carousel-options="{&quot;loop&quot;: false}">
+                                                    <img src="../img/photos/unsplash-1.jpg" class="rounded-0 w-100"
+                                                        alt="Image" />
+                                                    <img src="../img/photos/unsplash-2.jpg" class="rounded-0 w-100"
+                                                        alt="Image" />
+                                                    <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100"
+                                                        alt="Image" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
                                     <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
 
                                     <div class="py-4">
@@ -571,46 +598,83 @@
                                         <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
                                     </div>
 
-                                    <a class="btn bg-main-color rounded-0 text-light my-3">Manage</a>
+                                    <a href="manage-gallery.htm"
+                                        class="btn bg-main-color rounded-0 text-light my-3">Manage</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="row py-4 px-2 mx-0">
-                            <div class="card shadow-none w-100">
-                                <div class="card-header border-bottom px-4">
-                                    <h4 class="mb-0 bold-text ">VENDOR DEALS</h4>
-                                    <p>This is the record of all your orders till date</p>
+                        <div class="card shadow-none w-100">
+                            <div class="card-header border-bottom px-4">
+                                <h4 class="mb-0 bold-text ">VENDOR DEALS</h4>
+                                <p>This is the record of all your orders till date</p>
+                            </div>
+                            <div class="card-body px-4 py-3">
+                                <div class="row mx-0 border-bottom py-3 mb-4">
+                                    <h5 class=" mb-0">6 DEALS ADDED</h5>
                                 </div>
-                                <div class="card-body px-4 py-3">
-                                        <div class="row mx-0 border-bottom py-3 mb-4">
-                                            <h5 class=" mb-0">6 DEALS ADDED</h5>
+                                <div class="row">
+                                    <div class="col-md-3 mb-4">
+                                        <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                        <div class="form-group">
+                                            <label class="custom-control custom-checkbox my-2">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-label pt-1 pl-2">Delete Image</span>
+                                            </label>
                                         </div>
-                                    <div class="row">
-                                        <div class="col-md-3 mb-4">
-                                            <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
-                                        </div>
-                                        <div class="col-md-3 mb-4">
-                                            <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
-                                        </div>
-                                        <div class="col-md-3 mb-4">
-                                            <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
-                                        </div>
-                                        <div class="col-md-3 mb-4">
-                                            <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
-                                        </div>
-                                        <div class="col-md-3 mb-4">
-                                            <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
-                                        </div>
-                                        <div class="col-md-3 mb-4">
-                                            <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
-                                        </div>
-    
                                     </div>
+                                    <div class="col-md-3 mb-4">
+                                        <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                        <div class="form-group">
+                                            <label class="custom-control custom-checkbox my-2">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-label pt-1 pl-2">Delete Image</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                        <div class="form-group">
+                                            <label class="custom-control custom-checkbox my-2">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-label pt-1 pl-2">Delete Image</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                        <div class="form-group">
+                                            <label class="custom-control custom-checkbox my-2">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-label pt-1 pl-2">Delete Image</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                        <div class="form-group">
+                                            <label class="custom-control custom-checkbox my-2">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-label pt-1 pl-2">Delete Image</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-4">
+                                        <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                        <div class="form-group">
+                                            <label class="custom-control custom-checkbox my-2">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-label pt-1 pl-2">Delete Image</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
+                    </div>
 
 
 
@@ -645,6 +709,7 @@
         </div>
 
     </div>
+
 
     <svg width="0" height="0" style="position:absolute">
         <defs>
