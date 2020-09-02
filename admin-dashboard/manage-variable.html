@@ -9,7 +9,7 @@
     <meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
     <meta name="author" content="Bootlab">
 
-    <title>Admin-Dashboard | Create Video</title>
+    <title>Admin-Dashboard | Manage Product Variation</title>
 
     <!-- roboto font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -159,7 +159,7 @@
                             <i class="align-middle" data-feather="settings"></i>
                             <span class="align-middle">Stories</span>
                         </a>
-                        <ul id="story" class="sidebar-dropdown list-unstyled collapse" data-parent="#sidebar">
+                        <ul id="story" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
                             <li class="sidebar-item">
                                 <a class="sidebar-link" href="#">Story 1</a>
                             </li>
@@ -182,12 +182,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sidebar-item active">
+                    <li class="sidebar-item">
                         <a href="#video" data-toggle="collapse" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="video"></i>
                             <span class="align-middle">Video</span>
                         </a>
-                        <ul id="video" class="sidebar-dropdown list-unstyled show " data-parent="#sidebar">
+                        <ul id="video" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
                             <li class="sidebar-item">
                                 <a class="sidebar-link" href="#">Video 1</a>
                             </li>
@@ -376,13 +376,13 @@
                     <div class="row mx-0 mb-md-4 mb-sm-4">
                         <div class="col-md-6 header mb-0">
                             <h1 class="header-title mb-2">
-                                Create Video
+                                Manage Product Variation
                             </h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item"><a href="video.html"> All Videos</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Create Video</li>
+                                    <li class="breadcrumb-item"><a href="story.html"> Single Product</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Manage Product Variation</li>
                                 </ol>
                             </nav>
                         </div>
@@ -396,74 +396,102 @@
 
                     <!-- First Single Order List -->
                     <div class="row mx-0 pb-5 mb-5">
-                        <div class="card shadow-none w-100">
-                            <div class="card-header px-4">
-                                <h5 class="card-title bold-text">CREATE VIDEOS</h5>
-                            </div>
-                            <div class="card-body">
-                                <form class="py-1">
-                                    <div class="form-group">
-                                        <label for="firstName">Select Author:</label>
-                                        <select class="form-control form-control-lg rounded-0 bg-light">
-                                            <option class="text-sm">Author 1</option>
-                                            <option class="text-sm">Author 2</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="firstName">Video Title:</label>
-                                        <input class="form-control form-control-lg rounded-0 bg-light" type="text">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="firstName">Category:</label>
-                                        <select class="form-control form-control-lg rounded-0 bg-light">
-                                            <option class="text-sm">Lifestyle</option>
-                                            <option class="text-sm">Travel</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="firstName">Description:</label>
-                                        <textarea class="form-control rounded-0 bg-light" rows="7"
-                                            placeholder=""></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="firstName">Cover Photo:</label>
-                                        <input class="form-control form-control-lg rounded-0 bg-light" type="file">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="firstName">Module Interest:</label>
-                                        <select class="form-control form-control-lg rounded-0 bg-light">
-                                            <option class="text-sm">Gaming</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="firstName">Video File (Max 20mb):</label>
-                                        <div class="form-control form-control-lg p-0 thumbnail-container bg-light">
-                                            <div class="upload-icon">
-                                                <img src="../img/upload-icon.png" class="w-100">
-                                                <small class="text-center">Select a File</small>
+                        <div class="col-md-8">
+                            <div class="card shadow-none w-100">
+                                <div class="card-header px-4 py-4 border-bottom">
+                                    <h5 class="card-title bold-text mb-0">MANAGE PRODUCT VARIATIONS FOR “NIKE SHOE”</h5>
+                                </div>
+                                <div class="card-body">
+                                    <form class="py-1">
+                                        <div class="mb-3">
+                                            <p class="text-lg py-2" style="border-bottom: 1px solid #000 !important;">
+                                                Variation (Color: RED)</p>
+                                            <div class="row">
+                                                <div class="col-md-6 form-group">
+                                                    <label for="firstName">Regular Price:</label>
+                                                    <input class="form-control form-control-lg rounded-0 bg-light"
+                                                        type="text">
+                                                </div>
+                                                <div class="col-md-6 form-group">
+                                                    <label for="lastName">Sales Price:</label>
+                                                    <input class="form-control form-control-lg rounded-0 bg-light"
+                                                        type="text">
+                                                </div>
                                             </div>
-                                            <input
-                                                class="form-control form-control-lg rounded-0 bg-light input-thumbnail"
-                                                type="file">
+                                            <div class="row">
+                                                <div class="col-md-6 form-group">
+                                                    <label for="firstName">Quantity:</label>
+                                                    <input class="form-control form-control-lg rounded-0 bg-light"
+                                                        type="text">
+                                                </div>
+                                                <div class="col-md-6 form-group">
+                                                    <label for="lastName">Low Stock Threshold:</label>
+                                                    <input class="form-control form-control-lg rounded-0 bg-light"
+                                                        type="text">
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="firstName">Make Featured:</label>
-                                        <select class="form-control form-control-lg rounded-0 bg-light">
-                                            <option class="text-sm">Yes</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="firstName">Status:</label>
-                                        <select class="form-control form-control-lg rounded-0 bg-light">
-                                            <option class="text-sm">Active</option>
-                                        </select>
-                                    </div>
+                                        <div class="mb-3">
+                                            <p class="text-lg py-2" style="border-bottom: 1px solid #000 !important;">
+                                                Variation (Size: LARGE)</p>
+                                            <div class="row">
+                                                <div class="col-md-6 form-group">
+                                                    <label for="firstName">Regular Price:</label>
+                                                    <input class="form-control form-control-lg rounded-0 bg-light"
+                                                        type="text">
+                                                </div>
+                                                <div class="col-md-6 form-group">
+                                                    <label for="lastName">Sales Price:</label>
+                                                    <input class="form-control form-control-lg rounded-0 bg-light"
+                                                        type="text">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 form-group">
+                                                    <label for="firstName">Quantity:</label>
+                                                    <input class="form-control form-control-lg rounded-0 bg-light"
+                                                        type="text">
+                                                </div>
+                                                <div class="col-md-6 form-group">
+                                                    <label for="lastName">Low Stock Threshold:</label>
+                                                    <input class="form-control form-control-lg rounded-0 bg-light"
+                                                        type="text">
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                    <button type="submit" class="btn bg-main-color rounded-0 my-2 text-light px-4">
-                                        Create
-                                    </button>
-                                </form>
+                                        <button type="submit" class="btn bg-main-color rounded-0 my-2 text-light px-4">
+                                            Update
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow w-100">
+                                <div class="card-header border-bottom py-3">
+                                    <h5 class="my-1 bold-text">MAIN PRODUCT PREVIEW</h5>
+                                </div>
+                                <div class="card-body ">
+                                    <ul class=" mb-3 pl-3 w-100">
+                                        <li class="border-0  py-2">
+                                            <span class="mb-1 bold-text mr-2">Product Name:</span>
+                                            <span class="mb-0">Nke Shoe</span>
+                                        </li>
+                                        <li class="border-0  py-2">
+                                            <span class="mb-1 bold-text mr-2">Category:</span>
+                                            <span class="mb-0">Shoe</span>
+                                        </li>
+                                        <li class="border-0  py-2">
+                                            <span class="mb-1 bold-text mr-2">Date Created:</span>
+                                            <span class="mb-0">20/02/2020</span>
+                                        </li>
+                                    </ul>
+                                    <div>
+                                        <img src="../img/avatars/avatar-5.jpg" class="w-100 h-auto mb-4" />
+                                    </div>
+                                    <a class="btn bg-main-color rounded-0 text-light">Edit Main Product</a>
+                                </div>
                             </div>
                         </div>
 

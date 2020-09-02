@@ -9,7 +9,7 @@
     <meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
     <meta name="author" content="Bootlab">
 
-    <title>Admin-Dashboard | Create Video</title>
+    <title>Admin-Dashboard | Create Podcast</title>
 
     <!-- roboto font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -23,9 +23,19 @@
 </head>
 
 <body>
-
-    <!-- carousel script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="mx-auto text-center p-5">
+                        <img src="../img/success.png" class="p-5 rounded-circle border mb-4" style="border: 1px solid #000 !important"/>
+                        <p class="text-lg mb-4">Podcast Created successfully  </p>
+                        <a href="create-podcast.html" class="btn bg-main-color text-light rounded-0 mt-1 mb-4">Create Episode</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="splash active">
         <div class="splash-icon"></div>
     </div>
@@ -168,12 +178,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item active">
                         <a href="#podcast" data-toggle="collapse" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="mic"></i>
                             <span class="align-middle">Podcasts</span>
                         </a>
-                        <ul id="podcast" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+                        <ul id="podcast" class="sidebar-dropdown list-unstyled show " data-parent="#sidebar">
                             <li class="sidebar-item">
                                 <a class="sidebar-link" href="#">Podcast 1</a>
                             </li>
@@ -182,12 +192,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sidebar-item active">
+                    <li class="sidebar-item">
                         <a href="#video" data-toggle="collapse" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="video"></i>
                             <span class="align-middle">Video</span>
                         </a>
-                        <ul id="video" class="sidebar-dropdown list-unstyled show " data-parent="#sidebar">
+                        <ul id="video" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
                             <li class="sidebar-item">
                                 <a class="sidebar-link" href="#">Video 1</a>
                             </li>
@@ -376,13 +386,13 @@
                     <div class="row mx-0 mb-md-4 mb-sm-4">
                         <div class="col-md-6 header mb-0">
                             <h1 class="header-title mb-2">
-                                Create Video
+                                Create Podcast
                             </h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item"><a href="video.html"> All Videos</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Create Video</li>
+                                    <li class="breadcrumb-item"><a href="video.html"> All Podcast</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Create Podcast</li>
                                 </ol>
                             </nav>
                         </div>
@@ -398,7 +408,7 @@
                     <div class="row mx-0 pb-5 mb-5">
                         <div class="card shadow-none w-100">
                             <div class="card-header px-4">
-                                <h5 class="card-title bold-text">CREATE VIDEOS</h5>
+                                <h5 class="card-title bold-text">CREATE PODCASTS</h5>
                             </div>
                             <div class="card-body">
                                 <form class="py-1">
@@ -410,7 +420,7 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="firstName">Video Title:</label>
+                                        <label for="firstName">Podcast Title:</label>
                                         <input class="form-control form-control-lg rounded-0 bg-light" type="text">
                                     </div>
                                     <div class="form-group">
@@ -436,18 +446,6 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="firstName">Video File (Max 20mb):</label>
-                                        <div class="form-control form-control-lg p-0 thumbnail-container bg-light">
-                                            <div class="upload-icon">
-                                                <img src="../img/upload-icon.png" class="w-100">
-                                                <small class="text-center">Select a File</small>
-                                            </div>
-                                            <input
-                                                class="form-control form-control-lg rounded-0 bg-light input-thumbnail"
-                                                type="file">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
                                         <label for="firstName">Make Featured:</label>
                                         <select class="form-control form-control-lg rounded-0 bg-light">
                                             <option class="text-sm">Yes</option>
@@ -460,7 +458,8 @@
                                         </select>
                                     </div>
 
-                                    <button type="submit" class="btn bg-main-color rounded-0 my-2 text-light px-4">
+                                    <button type="button" class="btn bg-main-color rounded-0 my-2 text-light px-4"
+                                        data-toggle="modal" data-target="#successModal">
                                         Create
                                     </button>
                                 </form>

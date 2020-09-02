@@ -9,7 +9,7 @@
     <meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
     <meta name="author" content="Bootlab">
 
-    <title>Admin-Dashboard | Create Video</title>
+    <title>Admin-Dashboard | Manage Single Podcast</title>
 
     <!-- roboto font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -24,8 +24,90 @@
 
 <body>
 
-    <!-- carousel script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <div class="modal fade" id="dealModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">MANAGE DEALS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="firstName">Select Vendor:</label>
+                            <select class="form-control form-control-lg rounded-0 bg-light">
+                                <option class="text-sm">Yanda Spot</option>
+                            </select>
+                        </div>
+                        <div class="row mx-0 border-bottom py-3 mb-4">
+                            <h5 class=" mb-0">YANDU SPOT DEALS</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                <div class="form-group">
+                                    <label class="custom-control custom-checkbox my-2">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-label pt-1 pl-2">Select Deal</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                <div class="form-group">
+                                    <label class="custom-control custom-checkbox my-2">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-label pt-1 pl-2">Select Deal</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                <div class="form-group">
+                                    <label class="custom-control custom-checkbox my-2">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-label pt-1 pl-2">Select Deal</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                <div class="form-group">
+                                    <label class="custom-control custom-checkbox my-2">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-label pt-1 pl-2">Select Deal</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                <div class="form-group">
+                                    <label class="custom-control custom-checkbox my-2">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-label pt-1 pl-2">Select Deal</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                <div class="form-group">
+                                    <label class="custom-control custom-checkbox my-2">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <span class="custom-control-label pt-1 pl-2">Select Deal</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn bg-main-color text-light rounded-0 mt-1 mb-4">Add Selected Deals</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="splash active">
         <div class="splash-icon"></div>
     </div>
@@ -168,12 +250,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item active">
                         <a href="#podcast" data-toggle="collapse" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="mic"></i>
                             <span class="align-middle">Podcasts</span>
                         </a>
-                        <ul id="podcast" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+                        <ul id="podcast" class="sidebar-dropdown list-unstyled show " data-parent="#sidebar">
                             <li class="sidebar-item">
                                 <a class="sidebar-link" href="#">Podcast 1</a>
                             </li>
@@ -182,12 +264,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sidebar-item active">
+                    <li class="sidebar-item">
                         <a href="#video" data-toggle="collapse" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="video"></i>
                             <span class="align-middle">Video</span>
                         </a>
-                        <ul id="video" class="sidebar-dropdown list-unstyled show " data-parent="#sidebar">
+                        <ul id="video" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
                             <li class="sidebar-item">
                                 <a class="sidebar-link" href="#">Video 1</a>
                             </li>
@@ -376,13 +458,12 @@
                     <div class="row mx-0 mb-md-4 mb-sm-4">
                         <div class="col-md-6 header mb-0">
                             <h1 class="header-title mb-2">
-                                Create Video
+                                    Manage Single Podcast Episode
                             </h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item"><a href="video.html"> All Videos</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Create Video</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Manage Single Podcast </li>
                                 </ol>
                             </nav>
                         </div>
@@ -394,80 +475,145 @@
                         </div>
                     </div>
 
-                    <!-- First Single Order List -->
-                    <div class="row mx-0 pb-5 mb-5">
-                        <div class="card shadow-none w-100">
-                            <div class="card-header px-4">
-                                <h5 class="card-title bold-text">CREATE VIDEOS</h5>
-                            </div>
-                            <div class="card-body">
-                                <form class="py-1">
-                                    <div class="form-group">
-                                        <label for="firstName">Select Author:</label>
-                                        <select class="form-control form-control-lg rounded-0 bg-light">
-                                            <option class="text-sm">Author 1</option>
-                                            <option class="text-sm">Author 2</option>
-                                        </select>
+                    <div class="row mx-0">
+                        <div class="col-md-8">
+                            <ul class="list-group mb-5 w-100 first-list shadow">
+                                <li class="list-group-item">
+                                    <div class="d-flex justify-content-between">
+                                        <h4 class="pt-2 bold-text">SINGLE PODCAST </h4>
+                                        <a class="btn bg-main-color text-light rounded-0 my-1">
+                                            Edit Podcast 
+                                        </a>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="firstName">Video Title:</label>
-                                        <input class="form-control form-control-lg rounded-0 bg-light" type="text">
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Author Name:</p>
+                                        <p class="col-md-6 text-right mb-0">Jack and Jill went up the Hill</p>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="firstName">Category:</label>
-                                        <select class="form-control form-control-lg rounded-0 bg-light">
-                                            <option class="text-sm">Lifestyle</option>
-                                            <option class="text-sm">Travel</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="firstName">Description:</label>
-                                        <textarea class="form-control rounded-0 bg-light" rows="7"
-                                            placeholder=""></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="firstName">Cover Photo:</label>
-                                        <input class="form-control form-control-lg rounded-0 bg-light" type="file">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="firstName">Module Interest:</label>
-                                        <select class="form-control form-control-lg rounded-0 bg-light">
-                                            <option class="text-sm">Gaming</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="firstName">Video File (Max 20mb):</label>
-                                        <div class="form-control form-control-lg p-0 thumbnail-container bg-light">
-                                            <div class="upload-icon">
-                                                <img src="../img/upload-icon.png" class="w-100">
-                                                <small class="text-center">Select a File</small>
-                                            </div>
-                                            <input
-                                                class="form-control form-control-lg rounded-0 bg-light input-thumbnail"
-                                                type="file">
+                                </li>
+                                <li class="list-group-item">
+                                        <div class="row">
+                                            <p class="col-md-6 mb-0">Category:</p>
+                                            <p class="col-md-6 text-right mb-0">Lifestyle</p>
                                         </div>
+                                    </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Number of Episode:</p>
+                                        <p class="col-md-6 text-right mb-0">24</p>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="firstName">Make Featured:</label>
-                                        <select class="form-control form-control-lg rounded-0 bg-light">
-                                            <option class="text-sm">Yes</option>
-                                        </select>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Featured:</p>
+                                        <p class="col-md-6 text-right mb-0">No</p>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="firstName">Status:</label>
-                                        <select class="form-control form-control-lg rounded-0 bg-light">
-                                            <option class="text-sm">Active</option>
-                                        </select>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Date Published:</p>
+                                        <p class="col-md-6 text-right mb-0"> 22/02/2020</p>
                                     </div>
-
-                                    <button type="submit" class="btn bg-main-color rounded-0 my-2 text-light px-4">
-                                        Create
-                                    </button>
-                                </form>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Tags:</p>
+                                        <p class="col-md-6 text-right mb-0"> #Lagos,#Ikeja, #lifestyle</p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <p class="col-md-6 mb-0">Description:</p>
+                                        <p class="col-md-6 text-right mb-0">For over 17 years, HipHopDX has been at the forefront of Hip Hop culture online, featuring over 2.7 million readers per month. </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow w-100">
+                                <div class="card-header border-bottom py-3">
+                                    <h4 class="my-1 bold-text">PODCAST STATISTICS</h4>
+                                </div>
+                                <div class="card-body ">
+                                    <ul class="list-group mb-5 w-100">
+                                        <li class="list-group-item border-0  px-0">
+                                            <p class="mb-1 bold-text">Today Audience </p>
+                                            <p class="mb-0">24</p>
+                                        </li>
+                                        <li class="list-group-item border-0  px-0">
+                                            <p class="mb-1 bold-text">Total Audience </p>
+                                            <p class="mb-0">24</p>
+                                        </li>
+                                        <li class="list-group-item border-0  px-0">
+                                            <p class="mb-1 bold-text">Saves</p>
+                                            <p class="mb-0">242</p>
+                                        </li>
+                                    </ul>
+                                    <a href="podcast.html" class="btn bg-main-color rounded-0 text-light">View Podcast</a>
+                                </div>
                             </div>
                         </div>
-
                     </div>
+
+                    <div class="row mx-0 pb-5 mb-5">
+                            <div class="card shadow-none w-100">
+                                <div class="card-header px-4">
+                                    <h5 class="card-title bold-text">ALL PODCAST EPISODE</h5>
+                                    <h6 class="card-subtitle text-muted">
+                                        This is the record of all vendors
+                                    </h6>
+                                </div>
+                                <div class="card-body">
+                                    <table id="datatables-basic-one" class="table table-hover  text-sm" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Episode Title</th>
+                                                <th>Episode No</th>
+                                                <th> Comment</th>
+                                                <th>Audience </th>
+                                                <th>Saves</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <img src="../img//photos/unsplash-1.jpg" height="35" width="35"
+                                                        class="rounded-circle mr-2" />
+                                                    Battle with inner
+                                                </td>
+                                                <td>42 </td>
+                                                <td>30</td>
+                                                <td>30</td>
+                                                <td>42</td>
+                                                <td>
+                                                    <a class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown"
+                                                        id="moreDropdown">
+                                                        More
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right"
+                                                        aria-labelledby="moreDropdown">
+                                                        <a class="dropdown-item border-bottom" href="#">
+                                                            Manage Episodes
+                                                        </a>
+                                                        <a class="dropdown-item border-bottom" href="#">
+                                                            Manage Deals
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            Delete
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+    
+                        </div>
 
 
 
