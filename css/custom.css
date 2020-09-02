@@ -51,10 +51,23 @@
 .upload-icon{
     position: absolute;
     top: 46px;
-    right: 50%;
+    left: 50%;
+    margin-left: -40px;
     display: inherit;
     width: 80px;
 }
+
+/* Custom checkbox on image */
+.check-image .custom-control-label{
+    position: unset !important;
+}
+.check-image .custom-control-label:after, .check-image .custom-control-label:before{
+    position: absolute !important;
+    top: .5rem !important;
+    right: .5rem !important;
+    left: auto !important;
+}
+
 
 
 @media screen and (max-width:600px){
