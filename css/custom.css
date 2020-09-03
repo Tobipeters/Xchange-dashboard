@@ -68,6 +68,9 @@
     left: auto !important;
 }
 
+.first-list .list-group-item:last-child{
+    border-bottom: 0px;
+}
 
 
 @media screen and (max-width:600px){
