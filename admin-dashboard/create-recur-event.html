@@ -20,6 +20,9 @@
 
     <script src="../js/settings.js"></script>
 
+    <!-- multiple input CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 </head>
 
 <body>
@@ -442,17 +445,22 @@
                                         </div>
                                     </div>
                                     <!-- Input chip, separated with comma -->
-                                    <div class="form-group">
-                                        <label for="firstName">Module Interest:</label>
-                                        <select class="form-control form-control-lg rounded-0 bg-light">
-                                            <option class="text-sm">Gaming</option>
+                                    <div class="form-group custom-multiple-input multiple-input-n-height">
+                                        <label for="firstName">Modules Interest:</label>
+                                        <select class="js-example-basic-multiple" name="states[]" multiple="multiple"
+                                            style="height: 150px;">
+                                            <option value="Videos">Active</option>
+                                            <option value="Events">Inactive</option>
+                                            <option value="podcast">Proactive</option>
                                         </select>
                                     </div>
                                     <!-- Input chip, separated with comma -->
-                                    <div class="form-group">
+                                    <div class="form-group custom-multiple-input multiple-input-n-height">
                                         <label for="firstName">Event Tags:</label>
-                                        <select class="form-control form-control-lg rounded-0 bg-light">
-                                            <option class="text-sm">TLDR</option>
+                                        <select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+                                            <option value="Videos">Active</option>
+                                            <option value="Events">Inactive</option>
+                                            <option value="podcast">Proactive</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
@@ -493,14 +501,16 @@
                                                 <h5 class="card-title bold-text">VARIABLE EVENT</h5>
                                             </div>
                                             <div class="card-body">
-                                                <div class="form-group">
+                                                <!-- Input chip, separated with comma -->
+                                                <div class="form-group custom-multiple-input multiple-input-n-height">
                                                     <label for="firstName">Select Variation:</label>
-                                                    <select class="form-control form-control-lg rounded-0 bg-light">
-                                                        <option class="text-sm">TLDR</option>
-                                                        <option class="text-sm">TLDR 1</option>
-                                                        <option class="text-sm">TLDR 2</option>
+                                                    <select class="js-example-basic-multiple" name="states[]"
+                                                        multiple="multiple">
+                                                        <option>TLDR</option>
+                                                        <option>TLDR 1</option>
+                                                        <option>TLDR 2</option>
                                                     </select>
-                                                    <small>
+                                                    <small class="d-block my-2">
                                                         The configuration settings for this product will be available
                                                         after publishing.
                                                     </small>
@@ -579,6 +589,15 @@
         </defs>
     </svg>
     <script src="../js/app.js"></script>
+
+    <!-- Multiple input with chip  -->
+    <script>
+        $(document).ready(function () {
+            $('.js-example-basic-multiple').select2();
+        });
+    </script>
+
+
     <!-- Jquery for data-table -->
     <script>
         $(function () {

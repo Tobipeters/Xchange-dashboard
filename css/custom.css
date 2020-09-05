@@ -72,6 +72,27 @@
     border-bottom: 0px;
 }
 
+/* Custom multiple input */
+.custom-multiple-input .select2-container{
+    width: 100% !important;
+    display: block;
+    background-color: #e9ecef!important;
+}
+.multiple-input-n-height .select2-container .select2-selection--multiple{
+    height: 41px !important;
+    padding:.3rem .5rem !important;
+}
+.custom-multiple-input .select2-container .select2-selection--multiple{
+    background-color: #e9ecef!important;
+    border: 1px solid #ced4da;
+    padding: .6rem 1rem;
+    height: 150px;
+}
+.custom-multiple-input .select2-container--bootstrap4 .select2-selection--multiple .select2-selection__choice{
+    padding: .45rem .7rem !important;
+    background:#ffffffe0 !important ;
+    margin: 0 .4rem .4rem 0;
+}
 
 @media screen and (max-width:600px){
     .cash-bold{

@@ -20,6 +20,10 @@
 
     <script src="../js/settings.js"></script>
 
+        <!-- multiple input CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
 </head>
 
 <body>
@@ -422,9 +426,14 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="form-group row pl-3">
-                                        <label for="firstName">Disable For:</label>
-                                        <input class="form-control form-control-lg rounded-0 bg-light" type="text">
+                                    <div class="form-group custom-multiple-input">
+                                        <label for="firstName">Modules Interest:</label>
+                                        <select class="js-example-basic-multiple" name="states[]" multiple="multiple"
+                                            style="height: 150px;">
+                                            <option value="Videos">Active</option>
+                                            <option value="Events">Inactive</option>
+                                            <option value="podcast">Proactive</option>
+                                        </select>
                                     </div>
                                     <div class="row pl-md-1">
                                         <div class="col-md-6 form-group">
@@ -503,6 +512,14 @@
         </defs>
     </svg>
     <script src="../js/app.js"></script>
+
+        <!-- Multiple input with chip  -->
+        <script>
+            $(document).ready(function () {
+                $('.js-example-basic-multiple').select2();
+            });
+        </script>
+
     <!-- Jquery for data-table -->
     <script>
         $(function () {
