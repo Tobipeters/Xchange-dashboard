@@ -94,6 +94,22 @@
     margin: 0 .4rem .4rem 0;
 }
 
+.slider-container {    
+    max-width: 1000px;
+    padding: 2rem 3rem;
+    background: #e6e6e6;
+    margin: 2rem auto 0 auto;
+    overflow: hidden;
+    border-radius: 5px;    
+    position:relative;
+
+}
+.slider-container:before {
+    content: '.slider-container';
+    position: absolute;
+    left: 0;
+}
+
 @media screen and (max-width:600px){
     .cash-bold{
         font-size: 1.5rem;

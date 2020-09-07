@@ -9,7 +9,7 @@
     <meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
     <meta name="author" content="Bootlab">
 
-    <title>Admin-Dashboard | Comments </title>
+    <title>Admin-Dashboard | Reviews and Ratings </title>
 
     <!-- roboto font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -193,14 +193,14 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item active">
                         <a href="review.html" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="star"></i>
                             <span class="align-middle">Ratings &amp; Reviews</span>
                             <span class="sidebar-badge badge py-2 px-1 badge-light text-dark">20 New</span>
                         </a>
                     </li>
-                    <li class="sidebar-item   active">
+                    <li class="sidebar-item">
                         <a href="comment.html" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="message-circle"></i>
                             <span class="align-middle">Comments</span>
@@ -373,12 +373,12 @@
                     <div class="row mx-0 mb-md-4 mb-sm-4">
                         <div class="col-md-6 header mb-0">
                             <h1 class="header-title mb-2">
-                                Comments
+                                Reviews and Ratings
                             </h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Comments</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Reviews and Ratings</li>
                                 </ol>
                             </nav>
                         </div>
@@ -395,148 +395,79 @@
                         <div class="col">
                             <div class="tab w-100">
                                 <ul class="nav nav-tabs " role="tablist">
-
-                                    <li class="nav-item">
-                                        <a class="nav-link active px-4" href="#tab-1" data-toggle="tab" role="tab">
-                                            <i class="align-middle mr-2" data-feather="file-text"></i> Stories
-                                        </a>
-                                    </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link px-4 active" href="#tab-1" data-toggle="tab" role="tab">
+                                                    <i class="align-middle mr-2" data-feather="shopping-cart"></i> Product
+                                                </a>
+                                            </li>
                                     <li class="nav-item">
                                         <a class="nav-link px-4" href="#tab-2" data-toggle="tab" role="tab">
-                                            <i class="align-middle mr-2" data-feather="mic"></i> Podcasts
+                                            <i class="align-middle mr-2" data-feather="video"></i> Deals
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link px-4" href="#tab-3" data-toggle="tab" role="tab">
-                                            <i class="align-middle mr-2" data-feather="video"></i> Videos
-                                        </a>
-                                    </li>
+                                            <a class="nav-link px-4" href="#tab-3" data-toggle="tab" role="tab">
+                                                <i class="align-middle mr-2" data-feather="video"></i> Experiences
+                                            </a>
+                                        </li>
+                                  
                                 </ul>
 
 
                                 <div class="tab-content px-0">
-
-                                    <!-- Stories Tab Content -->
-                                    <div class="tab-pane active" id="tab-1" role="tabpanel">
-                                        <div class="card shadow-none">
-                                            <div class="card-header px-4">
-                                                <h5 class="card-title">STORIES RATINGS AND REVIEWS</h5>
-                                                <h6 class="card-subtitle text-muted">This is the record of all stories
-                                                    till date</h6>
-                                            </div>
-                                            <div class="card-body ">
-                                                <table id="datatables-basic-one" class="table table-hover font-size-md "
-                                                    style="width:100%">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Reviewer's Name</th>
-                                                            <th>Story Title</th>
-                                                            <th>Comment</th>
-                                                            <th>Dated</th>
-                                                            <th>Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Bosun Jones </td>
-                                                            <td>Top 5 places to visit in America </td>
-                                                            <td> Lorem ipsum dolor sit amet</td>
-                                                            <td> 22/01/2020 </td>
-
-                                                            <td>
-                                                                <a class="btn btn-outline-dark">
-                                                                    View Story
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>Bosun Jones </td>
-                                                            <td>Top 5 places to visit in America </td>
-                                                            <td> Lorem ipsum dolor sit amet</td>
-                                                            <td> 22/01/2020 </td>
-
-                                                            <td>
-                                                                <a class="btn btn-outline-dark">
-                                                                    View Story
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-
-
-                                                    </tbody>
-
-                                                </table>
+                                     <!-- Product Tab Content -->
+                                     <div class="tab-pane active" id="tab-1" role="tabpanel">
+                                            <div class="card shadow-none">
+                                                <div class="card-header px-4">
+                                                    <h5 class="card-title">PRODUCTS RATINGS AND REVIEWS</h5>
+                                                    <h6 class="card-subtitle text-muted">This is the record of all saved on
+                                                        display products till date</h6>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <table id="datatables-basic-five"
+                                                        class="table table-hover font-size-md " style="width:100%">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>reviewer Name</th>
+                                                                <th>Product Name</th>
+                                                                <th>Ratings</th>
+                                                                <th>Comment </th>
+                                                                <th>Date </th>
+                                                                <th>Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Bosun Jones</td>
+    
+                                                                <td>Ankara Cloth </td>
+                                                                <td> 1/5 </td>
+                                                                <td> Lorem ipsum dolor sit amet </td>
+                                                                <td>22/01/2020</td>
+                                                                <td>
+                                                                    <button class="btn btn-outline-dark">
+                                                                        View Product
+                                                                    </button>
+    
+                                                                </td>
+                                                            </tr>
+    
+                                                        </tbody>
+    
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <!-- Podcast Tab Content -->
+                                    <!-- Video Tab Content -->
                                     <div class="tab-pane" id="tab-2" role="tabpanel">
                                         <div class="card shadow-none">
                                             <div class="card-header px-4">
-                                                <h5 class="card-title">PODCASTS RATINGS AND REVIEWS</h5>
+                                                <h5 class="card-title">DEAL RATINGS AND REVIEWS</h5>
                                                 <h6 class="card-subtitle text-muted">This is the record of all saved
-                                                    Podcasts</h6>
-                                            </div>
-                                            <div class="card-body ">
-                                                <table id="datatables-basic-two" class="table table-hover font-size-md "
-                                                    style="width:100%">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Reviewer's Name</th>
-                                                            <th>Podcast Title</th>
-                                                            <th>Episode</th>
-                                                            <th>Comment</th>
-                                                            <th>Date</th>
-                                                            <th>Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Bosun Jones </td>
-                                                            <td>Top 5 places to visit in America </td>
-                                                            <td>15</td>
-                                                            <td> Lorem ipsum dolor sit amet </td>
-                                                            <td>22/01/2020</td>
-                                                            <td>
-                                                                <button class="btn btn-outline-dark ">
-                                                                    View Podcast
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>Bosun Jones </td>
-                                                            <td>Top 5 places to visit in America </td>
-                                                            <td>15</td>
-                                                            <td> Lorem ipsum dolor sit amet </td>
-                                                            <td>22/01/2020</td>
-                                                            <td>
-                                                                <button class="btn btn-outline-dark ">
-                                                                    View Podcast
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <!-- Video Tab Content -->
-                                    <div class="tab-pane" id="tab-3" role="tabpanel">
-                                        <div class="card shadow-none">
-                                            <div class="card-header px-4">
-                                                <h5 class="card-title">VIDEOS RATINGS AND REVIEWS</h5>
-                                                <h6 class="card-subtitle text-muted">This is the record of all saved
-                                                    Videos</h6>
+                                                    Deals</h6>
                                             </div>
                                             <div class="card-body ">
                                                 <table id="datatables-basic-three"
@@ -545,8 +476,9 @@
                                                         <tr>
                                                             <th>#</th>
                                                             <th>Reviewer's Title</th>
-                                                            <th>Video Title</th>
+                                                            <th>Deal Name</th>
                                                             <th>Comment</th>
+                                                            <th>Ratings</th>
                                                             <th>Date</th>
                                                             <th>Action</th>
                                                         </tr>
@@ -557,10 +489,11 @@
                                                             <td> Bosun Jones </td>
                                                             <td>Top 5 places to visit in America </td>
                                                             <td>Lorem ipsum dolor sit amet</td>
+                                                            <td>3/5</td>
                                                             <td>22/01/2020</td>
                                                             <td>
                                                                 <button class="btn btn-outline-dark">
-                                                                    Watch Video
+                                                                    View Deal
                                                                 </button>
                                                             </td>
                                                         </tr>
@@ -569,10 +502,11 @@
                                                             <td> Bosun Jones </td>
                                                             <td>Top 5 places to visit in America </td>
                                                             <td>Lorem ipsum dolor sit amet</td>
+                                                            <td>3/5</td>
                                                             <td>22/01/2020</td>
                                                             <td>
                                                                 <button class="btn btn-outline-dark">
-                                                                    Watch Video
+                                                                    View Deal
                                                                 </button>
                                                             </td>
                                                         </tr>
@@ -583,6 +517,66 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <!-- Events Tab Content -->
+                                    <div class="tab-pane" id="tab-3" role="tabpanel">
+                                        <div class="card shadow-none">
+                                            <div class="card-header px-4">
+                                                <h5 class="card-title">EXPERIENCES RATINGS AND REVIEWS</h5>
+                                                <h6 class="card-subtitle text-muted">This is the record of all saved
+                                                    Experiences</h6>
+                                            </div>
+                                            <div class="card-body ">
+                                                <table id="datatables-basic-three"
+                                                    class="table table-hover font-size-md " style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>Reviewer's Title</th>
+                                                            <th>Events Name</th>
+                                                            <th>Ratings</th>
+                                                            <th>Comment</th>
+                                                            <th>Date</th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td> Bosun Jones </td>
+                                                            <td>Eko Trade Fair</td>
+                                                            <td> 1/5 </td>
+                                                            <td>Lorem ipsum dolor sit amet</td>
+                                                            <td>22/01/2020</td>
+                                                            <td>
+                                                                <button class="btn btn-outline-dark">
+                                                                    View Event
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td> Bosun Jones </td>
+                                                            <td>Eko Trade Fair</td>
+                                                            <td> 1/5 </td>
+                                                            <td>Lorem ipsum dolor sit amet</td>
+                                                            <td>22/01/2020</td>
+                                                            <td>
+                                                                <button class="btn btn-outline-dark">
+                                                                    View Event
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                   
 
                                 </div>
                             </div>

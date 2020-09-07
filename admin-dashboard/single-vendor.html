@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 
     <script src="../js/settings.js"></script>
-  
+
 </head>
 
 <body>
@@ -571,26 +571,35 @@
                                         <div class="card-header">
                                         </div>
                                         <div class="card-body">
-                                            <!-- <div class="cz-carousel cz-controls-static cz-dots-enabled cz-dots-light cz-dots-inside"
-                                                style="max-width: 50rem;">
-                                                <div class="cz-carousel-inner"
-                                                    data-carousel-options="{&quot;loop&quot;: false}">
-                                                    <img src="../img/photos/unsplash-1.jpg" class="rounded-0 w-100"
-                                                        alt="Image" />
-                                                    <img src="../img/photos/unsplash-2.jpg" class="rounded-0 w-100"
-                                                        alt="Image" />
-                                                    <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100"
-                                                        alt="Image" />
+                            
+
+                                            <!-- <div class="slider-container">
+                                                <ul class="controls" id="customize-controls"
+                                                    aria-label="Carousel Navigation" tabindex="0">
+                                                    <li class="prev" data-controls="prev" aria-controls="customize"
+                                                        tabindex="-1">
+                                                        <i class="fas fa-angle-left fa-2x"></i>
+                                                    </li>
+                                                    <li class="next" data-controls="next" aria-controls="customize"
+                                                        tabindex="-1">
+                                                        <i class="fas fa-angle-right fa-2x"></i>
+                                                    </li>
+                                                </ul>
+                                                <div class="my-slider">
+                                                    <div>
+                                                        <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100"
+                                                            alt="Image" />
+                                                    </div>
+                                                    <div>
+                                                        <img src="../img/photos/unsplash-2.jpg" class="rounded-0 w-100"
+                                                            alt="Image" />
+                                                    </div>
+                                                    <div>
+                                                        <img src="../img/photos/unsplash-1.jpg" class="rounded-0 w-100"
+                                                            alt="Image" />
+                                                    </div>
                                                 </div>
                                             </div> -->
-                                            <div class="my-slider">
-                                                <div> <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100"
-                                                        alt="Image" /></div>
-                                                <div><img src="../img/photos/unsplash-2.jpg" class="rounded-0 w-100"
-                                                        alt="Image" /></div>
-                                                <div> <img src="../img/photos/unsplash-1.jpg" class="rounded-0 w-100"
-                                                        alt="Image" /></div>
-                                            </div>
                                         </div>
                                     </div>
 
@@ -726,13 +735,35 @@
             </symbol>
         </defs>
     </svg>
-    <!-- <script>
-        tns()
-    </script> -->
     <script src="../js/app.js"></script>
 
-      <!-- carousel script -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> 
+    <!-- carousel script -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script>
+        const slider = tns({
+            container: '.my-slider',
+            loop: true,
+            items: 1,
+            slideBy: 'page',
+            nav: false,
+            autoplay: true,
+            speed: 400,
+            autoplayButtonOutput: false,
+            mouseDrag: true,
+            lazyload: true,
+            controlsContainer: "#customize-controls",
+            responsive: {
+                640: {
+                    items: 1,
+                },
+
+                768: {
+                    items: 1,
+                }
+            }
+
+        });
+    </script> -->
 
     <!-- Jquery for data-table -->
     <script>

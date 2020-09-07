@@ -9,7 +9,7 @@
     <meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
     <meta name="author" content="Bootlab">
 
-    <title>Admin-Dashboard | Comments </title>
+    <title>Admin-Dashboard | Manage Single Event</title>
 
     <!-- roboto font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -20,9 +20,17 @@
 
     <script src="../js/settings.js"></script>
 
+    <!-- multiple input CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+
 </head>
 
 <body>
+
+    <!-- carousel script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <div class="splash active">
         <div class="splash-icon"></div>
     </div>
@@ -61,39 +69,39 @@
                             <span class="align-middle">Users</span>
                         </a>
                         <ul id="users" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-                                <li class="sidebar-item">
-                                    <a class="sidebar-link" href="user.html">All Users</a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a class="sidebar-link" href="create-user.html">Create New User</a>
-                                </li>
-                            </ul>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="user.html">All Users</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="create-user.html">Create New User</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="sidebar-item">
                         <a href="#vendor" data-toggle="collapse" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="users"></i>
                             <span class="align-middle">Vendor</span>
                         </a>
-                        <ul id="vendor" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-                                <li class="sidebar-item">
-                                    <a class="sidebar-link" href="vendor.html">All Vendors</a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a class="sidebar-link" href="single-vendor.html">Single Vendor</a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a class="sidebar-link" href="vendor-category.html">Vendor Categories</a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a class="sidebar-link" href="vendor-sub-category.html">Vendor Sub-Categories</a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a class="sidebar-link" href="create-vendor.html">Create New Vendor</a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a class="sidebar-link" href="vendor-facility.html">Vendor Facilities</a>
-                                </li>
-                            </ul>
+                        <ul id="vendor" class="sidebar-dropdown list-unstyled collapse" data-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="vendor.html">All Vendors</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="single-vendor.html">Single Vendor</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="vendor-category.html">Vendor Categories</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="vendor-sub-category.html">Vendor Sub-Categories</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="create-vendor.html">Create New Vendor</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="vendor-facility.html">Vendor Facilities</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="sidebar-item">
                         <a href="#city" data-toggle="collapse" class="sidebar-link collapsed">
@@ -109,17 +117,32 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item active">
                         <a href="#deal" data-toggle="collapse" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="tag"></i>
                             <span class="align-middle">Deals</span>
                         </a>
-                        <ul id="deal" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+                        <ul id="deal" class="sidebar-dropdown list-unstyled show" data-parent="#sidebar">
                             <li class="sidebar-item">
-                                <a class="sidebar-link" href="#">Deal 1</a>
+                                <a class="sidebar-link" href="deal.html">All Deals</a>
                             </li>
                             <li class="sidebar-item">
-                                <a class="sidebar-link" href="#">Deal 2</a>
+                                <a class="sidebar-link" href="single-deal.html">Single Deal</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="create-deal.html">Create Deal</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="deal-faq.html">Deal FAQ</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="deal-policy.html">Deal Policy</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="deal-gallery.html">Deal Gallery </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="deal-tag.html">Deal Tag</a>
                             </li>
                         </ul>
                     </li>
@@ -128,12 +151,24 @@
                             <i class="align-middle" data-feather="loader"></i>
                             <span class="align-middle">Experiences</span>
                         </a>
-                        <ul id="exp" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+                        <ul id="exp" class="sidebar-dropdown list-unstyled collapse" data-parent="#sidebar">
                             <li class="sidebar-item">
-                                <a class="sidebar-link" href="#">Experience 1</a>
+                                <a class="sidebar-link" href="experience.html">All Experiences</a>
                             </li>
                             <li class="sidebar-item">
-                                <a class="sidebar-link" href="#">Experience 2</a>
+                                <a class="sidebar-link" href="single-experience.html">Single Experience</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="create-experience.html">Create Experience</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="experience-faq.html">Experience FAQs</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="experience-policy.html">Experience Policy</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="experience-tag.html">Experience Tags</a>
                             </li>
                         </ul>
                     </li>
@@ -142,13 +177,14 @@
                             <i class="align-middle" data-feather="star"></i>
                             <span class="align-middle">Events</span>
                         </a>
-                        <ul id="event" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+                        <ul id="event" class="sidebar-dropdown list-unstyled collapse" data-parent="#sidebar">
                             <li class="sidebar-item">
-                                <a class="sidebar-link" href="#">Event 1</a>
+                                <a class="sidebar-link" href="experience.html">All Events</a>
                             </li>
                             <li class="sidebar-item">
-                                <a class="sidebar-link" href="#">Event 2</a>
+                                <a class="sidebar-link" href="single-experience.html">Single Event</a>
                             </li>
+
                         </ul>
                     </li>
                     <li class="sidebar-item">
@@ -170,7 +206,7 @@
                             <i class="align-middle" data-feather="mic"></i>
                             <span class="align-middle">Podcasts</span>
                         </a>
-                        <ul id="podcast" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+                        <ul id="podcast" class="sidebar-dropdown list-unstyled collapse" data-parent="#sidebar">
                             <li class="sidebar-item">
                                 <a class="sidebar-link" href="#">Podcast 1</a>
                             </li>
@@ -184,7 +220,7 @@
                             <i class="align-middle" data-feather="video"></i>
                             <span class="align-middle">Video</span>
                         </a>
-                        <ul id="video" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+                        <ul id="video" class="sidebar-dropdown list-unstyled collapse" data-parent="#sidebar">
                             <li class="sidebar-item">
                                 <a class="sidebar-link" href="#">Video 1</a>
                             </li>
@@ -200,14 +236,14 @@
                             <span class="sidebar-badge badge py-2 px-1 badge-light text-dark">20 New</span>
                         </a>
                     </li>
-                    <li class="sidebar-item   active">
+                    <li class="sidebar-item ">
                         <a href="comment.html" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="message-circle"></i>
                             <span class="align-middle">Comments</span>
                             <span class="sidebar-badge badge py-2 px-1 badge-light text-dark">20 New</span>
                         </a>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item ">
                         <a href="coupon.html" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="delete"></i>
                             <span class="align-middle">Coupons</span>
@@ -373,12 +409,13 @@
                     <div class="row mx-0 mb-md-4 mb-sm-4">
                         <div class="col-md-6 header mb-0">
                             <h1 class="header-title mb-2">
-                                Comments
+                                Manage Single Event
                             </h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Comments</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Manage Single Event
+                                    </li>
                                 </ol>
                             </nav>
                         </div>
@@ -390,197 +427,264 @@
                         </div>
                     </div>
 
-                    <!-- Tabs -->
-                    <div class="row pt-1 pb-5 mb-0">
-                        <div class="col">
-                            <div class="tab w-100">
-                                <ul class="nav nav-tabs " role="tablist">
+                    <!-- experience faqs -->
 
-                                    <li class="nav-item">
-                                        <a class="nav-link active px-4" href="#tab-1" data-toggle="tab" role="tab">
-                                            <i class="align-middle mr-2" data-feather="file-text"></i> Stories
-                                        </a>
+                    <div class="row mx-0">
+                        <div class="col-md-8">
+                            <div class="card shadow-none w-100">
+                                <ul class="list-group mb-3 w-100 first-list">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="pt-2 bold-text">SINGLE DEAL</h4>
+                                            <a class="btn bg-main-color text-light rounded-0 my-1">
+                                                Edit Deal
+                                            </a>
+                                        </div>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link px-4" href="#tab-2" data-toggle="tab" role="tab">
-                                            <i class="align-middle mr-2" data-feather="mic"></i> Podcasts
-                                        </a>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <p class="col-md-6 mb-0">Vendor Name:</p>
+                                            <p class="col-md-6 text-right mb-0">House of Faaji</p>
+                                        </div>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link px-4" href="#tab-3" data-toggle="tab" role="tab">
-                                            <i class="align-middle mr-2" data-feather="video"></i> Videos
-                                        </a>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <p class="col-md-6 mb-0">Category:</p>
+                                            <p class="col-md-6 text-right mb-0">Fashion & Lifestyle</p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <p class="col-md-6 mb-0">Sub-Category:</p>
+                                            <p class="col-md-6 text-right mb-0">Restaurant & Bars</p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <p class="col-md-6 mb-0">Regualr Price:</p>
+                                            <p class="col-md-6 text-right mb-0">42,000</p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <p class="col-md-6 mb-0">Sales Price:</p>
+                                            <p class="col-md-6 text-right mb-0">23,000</p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <p class="col-md-6 mb-0">Start Date:</p>
+                                            <p class="col-md-6 text-right mb-0"> 22/02/2020</p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <p class="col-md-6 mb-0">End Date:</p>
+                                            <p class="col-md-6 text-right mb-0"> 22/02/2020</p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <p class="col-md-6 mb-0">Display on Main Homepage:</p>
+                                            <p class="col-md-6 text-right mb-0">Yes</p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <p class="col-md-6 mb-0">Display on CityGuide Homepage:</p>
+                                            <p class="col-md-6 text-right mb-0">Yes</p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <p class="col-md-6 mb-0">Display on Featured:</p>
+                                            <p class="col-md-6 text-right mb-0">No</p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <p class="col-md-6 mb-0">Tags:</p>
+                                            <p class="col-md-6 text-right mb-0">#Lagos,#Ikeja, #lifestyle</p>
+                                        </div>
                                     </li>
                                 </ul>
+                            </div>
 
 
-                                <div class="tab-content px-0">
+                            <div class="row mx-0">
+                                <div class="card shadow w-100">
+                                    <div class="card-body ">
+                                        <h4 class="font-weight-bolder py-2">Description</h4>
+                                        <p class="text-muted">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
-                                    <!-- Stories Tab Content -->
-                                    <div class="tab-pane active" id="tab-1" role="tabpanel">
-                                        <div class="card shadow-none">
-                                            <div class="card-header px-4">
-                                                <h5 class="card-title">STORIES RATINGS AND REVIEWS</h5>
-                                                <h6 class="card-subtitle text-muted">This is the record of all stories
-                                                    till date</h6>
-                                            </div>
-                                            <div class="card-body ">
-                                                <table id="datatables-basic-one" class="table table-hover font-size-md "
-                                                    style="width:100%">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Reviewer's Name</th>
-                                                            <th>Story Title</th>
-                                                            <th>Comment</th>
-                                                            <th>Dated</th>
-                                                            <th>Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Bosun Jones </td>
-                                                            <td>Top 5 places to visit in America </td>
-                                                            <td> Lorem ipsum dolor sit amet</td>
-                                                            <td> 22/01/2020 </td>
+                            <div class="row mx-0">
+                                <div class="card shadow w-100">
+                                    <div class="card-body ">
+                                        <h4 class="font-weight-bolder py-2">Policy</h4>
+                                        <p class="text-muted">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </p>
+                                        <a class="btn bg-main-color rounded-0 text-light">Manage</a>
+                                    </div>
+                                </div>
+                            </div>
 
-                                                            <td>
-                                                                <a class="btn btn-outline-dark">
-                                                                    View Story
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>Bosun Jones </td>
-                                                            <td>Top 5 places to visit in America </td>
-                                                            <td> Lorem ipsum dolor sit amet</td>
-                                                            <td> 22/01/2020 </td>
+                            <div class="row mx-0">
+                                <div class="card shadow w-100 ">
+                                    <div class="card-body ">
+                                        <h4 class="font-weight-bolder py-2">FAQs</h4>
+                                        <div class="mb-3">
+                                            <h5 class="font-weight-bolder">Lorem ipsum dolor sit amet, consectetur </h5>
+                                            <p class="text-muted">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis
+                                                nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </p>
+                                        </div>
+                                        <div class="mb-3">
+                                            <h5 class="font-weight-bolder">Lorem ipsum dolor sit amet, consectetur </h5>
+                                            <p class="text-muted">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis
+                                                nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </p>
+                                        </div>
+                                        <div class="mb-3">
+                                            <h5 class="font-weight-bolder">Lorem ipsum dolor sit amet, consectetur </h5>
+                                            <p class="text-muted">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                quis
+                                                nostrud
+                                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </p>
+                                        </div>
+                                        <a class="btn bg-main-color rounded-0 text-light">Manage</a>
+                                    </div>
+                                </div>
+                            </div>
 
-                                                            <td>
-                                                                <a class="btn btn-outline-dark">
-                                                                    View Story
-                                                                </a>
-                                                            </td>
-                                                        </tr>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow w-100">
+                                <div class="card-header border-bottom py-3">
+                                    <h4 class="my-1 bold-text">DEAL STATISTICS</h4>
+                                </div>
+                                <div class="card-body ">
+                                    <ul class="list-group mb-5 w-100">
+                                        <li class="list-group-item border-0  px-0">
+                                            <p class="mb-1 bold-text">Total Booked Today</p>
+                                            <p class="mb-0">24</p>
+                                        </li>
+                                        <li class="list-group-item border-0  px-0">
+                                            <p class="mb-1 bold-text">Total Booked this Month </p>
+                                            <p class="mb-0">24</p>
+                                        </li>
+                                        <li class="list-group-item border-0  px-0">
+                                            <p class="mb-1 bold-text">All Time Bookings</p>
+                                            <p class="mb-0">24</p>
+                                        </li>
+                                        <li class="list-group-item border-0  px-0">
+                                            <p class="mb-1 bold-text">Overall Rating</p>
+                                            <p class="mb-0">24</p>
+                                        </li>
+                                        <li class="list-group-item border-0  px-0">
+                                            <p class="mb-1 bold-text">Total Comments</p>
+                                            <p class="mb-0">20342</p>
+                                        </li>
+                                    </ul>
+                                    <a class="btn bg-main-color rounded-0 text-light">View Event</a>
+
+                                    <img src="../img/photos/unsplash-3.jpg" class="w-100 h-auto my-4" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
-                                                    </tbody>
-
-                                                </table>
-                                            </div>
+                    <div class="row py-4 px-2 mx-0">
+                        <div class="card shadow-none w-100">
+                            <div class="card-header border-bottom px-4">
+                                    <h4 class="mb-0 bold-text ">GALLERY</h4>
+                                    <p>This is the record of all your orders till date</p>
+                            </div>
+                            <div class="card-body px-4 py-3">
+                                <div class="row mx-0 border-bottom py-3 mb-4">
+                                    <h5 class=" mb-0">6 DEALS ADDED</h5>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 mb-4">
+                                        <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                        <div class="form-group">
+                                            <label class="custom-control custom-checkbox my-2">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-label pt-1 pl-2">Delete Image</span>
+                                            </label>
                                         </div>
                                     </div>
-
-                                    <!-- Podcast Tab Content -->
-                                    <div class="tab-pane" id="tab-2" role="tabpanel">
-                                        <div class="card shadow-none">
-                                            <div class="card-header px-4">
-                                                <h5 class="card-title">PODCASTS RATINGS AND REVIEWS</h5>
-                                                <h6 class="card-subtitle text-muted">This is the record of all saved
-                                                    Podcasts</h6>
-                                            </div>
-                                            <div class="card-body ">
-                                                <table id="datatables-basic-two" class="table table-hover font-size-md "
-                                                    style="width:100%">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Reviewer's Name</th>
-                                                            <th>Podcast Title</th>
-                                                            <th>Episode</th>
-                                                            <th>Comment</th>
-                                                            <th>Date</th>
-                                                            <th>Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td>Bosun Jones </td>
-                                                            <td>Top 5 places to visit in America </td>
-                                                            <td>15</td>
-                                                            <td> Lorem ipsum dolor sit amet </td>
-                                                            <td>22/01/2020</td>
-                                                            <td>
-                                                                <button class="btn btn-outline-dark ">
-                                                                    View Podcast
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td>Bosun Jones </td>
-                                                            <td>Top 5 places to visit in America </td>
-                                                            <td>15</td>
-                                                            <td> Lorem ipsum dolor sit amet </td>
-                                                            <td>22/01/2020</td>
-                                                            <td>
-                                                                <button class="btn btn-outline-dark ">
-                                                                    View Podcast
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                    <div class="col-md-4 mb-4">
+                                        <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                        <div class="form-group">
+                                            <label class="custom-control custom-checkbox my-2">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-label pt-1 pl-2">Delete Image</span>
+                                            </label>
                                         </div>
-
                                     </div>
-
-                                    <!-- Video Tab Content -->
-                                    <div class="tab-pane" id="tab-3" role="tabpanel">
-                                        <div class="card shadow-none">
-                                            <div class="card-header px-4">
-                                                <h5 class="card-title">VIDEOS RATINGS AND REVIEWS</h5>
-                                                <h6 class="card-subtitle text-muted">This is the record of all saved
-                                                    Videos</h6>
-                                            </div>
-                                            <div class="card-body ">
-                                                <table id="datatables-basic-three"
-                                                    class="table table-hover font-size-md " style="width:100%">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>Reviewer's Title</th>
-                                                            <th>Video Title</th>
-                                                            <th>Comment</th>
-                                                            <th>Date</th>
-                                                            <th>Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>1</td>
-                                                            <td> Bosun Jones </td>
-                                                            <td>Top 5 places to visit in America </td>
-                                                            <td>Lorem ipsum dolor sit amet</td>
-                                                            <td>22/01/2020</td>
-                                                            <td>
-                                                                <button class="btn btn-outline-dark">
-                                                                    Watch Video
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>2</td>
-                                                            <td> Bosun Jones </td>
-                                                            <td>Top 5 places to visit in America </td>
-                                                            <td>Lorem ipsum dolor sit amet</td>
-                                                            <td>22/01/2020</td>
-                                                            <td>
-                                                                <button class="btn btn-outline-dark">
-                                                                    Watch Video
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-
-                                                    </tbody>
-
-                                                </table>
-                                            </div>
+                                    <div class="col-md-4 mb-4">
+                                        <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                        <div class="form-group">
+                                            <label class="custom-control custom-checkbox my-2">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-label pt-1 pl-2">Delete Image</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                        <div class="form-group">
+                                            <label class="custom-control custom-checkbox my-2">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-label pt-1 pl-2">Delete Image</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                        <div class="form-group">
+                                            <label class="custom-control custom-checkbox my-2">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-label pt-1 pl-2">Delete Image</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                        <div class="form-group">
+                                            <label class="custom-control custom-checkbox my-2">
+                                                <input type="checkbox" class="custom-control-input">
+                                                <span class="custom-control-label pt-1 pl-2">Delete Image</span>
+                                            </label>
                                         </div>
                                     </div>
 
@@ -588,6 +692,7 @@
                             </div>
                         </div>
                     </div>
+
 
             </main>
             <footer class="footer">
@@ -621,6 +726,7 @@
 
     </div>
 
+
     <svg width="0" height="0" style="position:absolute">
         <defs>
             <symbol viewBox="0 0 512 512" id="ion-ios-pulse-strong">
@@ -631,6 +737,14 @@
         </defs>
     </svg>
     <script src="../js/app.js"></script>
+
+    <!-- Multiple input with chip  -->
+    <script>
+        $(document).ready(function () {
+            $('.js-example-basic-multiple').select2();
+        });
+    </script>
+
     <!-- Jquery for data-table -->
     <script>
         $(function () {
