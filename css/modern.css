@@ -13314,7 +13314,8 @@ a.card {
 }
 
 .navbar .nav-item a:focus {
-    outline: 0
+    outline: 0;
+    background:#F12711;
 }
 
 .navbar .nav-item .dropdown-menu {
