@@ -13404,7 +13404,7 @@ a.card {
 }
 
 .nav-item .indicator {
-    background: #fd7e14;
+    background: #fff;
     box-shadow: 0 0 2rem 0 rgba(0, 0, 0, .05);
     border-radius: 50%;
     display: block;
@@ -13453,8 +13453,8 @@ screen and (-ms-high-contrast:active) {
 
 .sidebar-brand,
 .sidebar-brand:hover {
-    padding: 1rem;
-    background: #153d77;
+    padding: 1rem 2.5rem;
+    background: #F12711;
     font-size: 1.175rem;
     font-weight: 500;
     color: #fff;
@@ -13660,7 +13660,8 @@ a.sidebar-link svg {
 .sidebar-badge {
     position: absolute;
     right: 15px;
-    top: 13px
+    background: linear-gradient(90deg, #F12711 0%, #FD7201 100%);
+    color: #fff;
 }
 
 .sidebar-dropdown .sidebar-badge {
@@ -13720,7 +13721,7 @@ a.sidebar-link svg {
 }
 
 .splash .splash-icon {
-    background: #153d77;
+    background: linear-gradient(90deg, #F12711 0%, #FD7201 100%);
     display: block;
     position: fixed;
     z-index: 100;
@@ -13882,7 +13883,7 @@ a.sidebar-link svg {
 
 .tab .nav-tabs .nav-link {
     background: transparent;
-    color: #343a40;
+    color: #fff;
     padding: .75rem 1rem;
     border: 0
 }
@@ -13893,7 +13894,7 @@ a.sidebar-link svg {
 }
 
 .tab .nav-tabs .nav-link:hover:not(.active) {
-    color: #3b7ddd
+    color: #fff
 }
 
 .tab .nav-tabs .nav-link svg {
@@ -14205,7 +14206,7 @@ pre.snippet {
     position: absolute;
     top: 0;
     left: 0;
-    background: #153d77;
+    background: linear-gradient(90deg, #F12711 0%, #FD7201 100%);
     content: " "
 }
 
