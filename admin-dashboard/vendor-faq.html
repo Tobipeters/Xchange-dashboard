@@ -9,7 +9,7 @@
     <meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
     <meta name="author" content="Bootlab">
 
-    <title>Admin-Dashboard | All Users </title>
+    <title>Admin-Dashboard | Manage Vendors FAQs</title>
 
     <!-- roboto font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -23,6 +23,9 @@
 </head>
 
 <body>
+
+    <!-- carousel script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <div class="splash active">
         <div class="splash-icon"></div>
     </div>
@@ -49,18 +52,18 @@
                             <span class="align-middle">Dashboards</span>
                         </a>
                     </li>
-                    <li class="sidebar-item ">
+                    <li class="sidebar-item">
                         <a href="order.html" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="shopping-cart"></i>
                             <span class="align-middle">Orders</span>
                         </a>
                     </li>
-                    <li class="sidebar-item active">
+                    <li class="sidebar-item">
                         <a href="#users" data-toggle="collapse" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="users"></i>
                             <span class="align-middle">Users</span>
                         </a>
-                        <ul id="users" class="sidebar-dropdown list-unstyled show " data-parent="#sidebar">
+                        <ul id="users" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
                             <li class="sidebar-item">
                                 <a class="sidebar-link" href="user.html">All Users</a>
                             </li>
@@ -69,12 +72,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item active">
                         <a href="#vendor" data-toggle="collapse" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="users"></i>
                             <span class="align-middle">Vendor</span>
                         </a>
-                        <ul id="vendor" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+                        <ul id="vendor" class="sidebar-dropdown list-unstyled show " data-parent="#sidebar">
                             <li class="sidebar-item">
                                 <a class="sidebar-link" href="vendor.html">All Vendors</a>
                             </li>
@@ -370,15 +373,16 @@
             </nav>
             <main class="content">
                 <div class="container-fluid">
-                    <div class="row mx-0 mb-md-5 mb-sm-4">
+                    <div class="row mx-0 mb-md-4 mb-sm-4">
                         <div class="col-md-6 header mb-0">
                             <h1 class="header-title mb-2">
-                                All Users
+                                Manage Vendors FAQs
                             </h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">All Users</li>
+                                    <li class="breadcrumb-item"><a href="single-vendor.html">Single Vendors</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Manage Vendors FAQs</li>
                                 </ol>
                             </nav>
                         </div>
@@ -390,187 +394,115 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-3 ">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col mt-0">
-                                            <h5 class="card-title">Total Number of Users</h5>
+                    <!-- First Single Order List -->
+                    <div class="row mx-0 pb-5 mb-5">
+                        <div class="col-md-6">
+                            <div class="card shadow w-100">
+                                <div class="card-header border-bottom py-3">
+                                    <h5 class="my-1 bold-text">NEW VENDOR FAQ</h5>
+                                </div>
+                                <div class="card-body ">
+                                    <form class="py-3">
+                                        <div class="form-group">
+                                            <label for="firstName">FAQ Title:</label>
+                                            <input class="form-control form-control-lg rounded-0 bg-light" type="text">
                                         </div>
-
-                                        <div class="col-auto">
-                                            <div class="avatar">
-                                                <div class="avatar-title rounded-circle bg-main-color">
-                                                    <i class="align-middle" data-feather="tag"></i>
-                                                </div>
+                                        <div class="row">
+                                            <div class="col form-group">
+                                                <label for="firstName">FAQ Text:</label>
+                                                <textarea class="form-control rounded-0 bg-light" rows="5"
+                                                    placeholder="Textarea"></textarea>
                                             </div>
                                         </div>
-                                    </div>
-                                    <h1 class="display-5 mt-1 mb-3">32</h1>
-                                    <div class="mb-0">
-                                        All your active deals
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="lastName">Status:</label>
+                                            <select class="form-control form-control-lg   rounded-0 bg-light">
+                                                <option>Active</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn bg-main-color rounded-0 my-2 text-light px-4">
+                                            Create
+                                        </button>
+                                    </form>
+
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 ">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col mt-0">
-                                            <h5 class="card-title text-dark">Suspended Users</h5>
-                                        </div>
-
-                                        <div class="col-auto">
-                                            <div class="avatar">
-                                                <div class="avatar-title rounded-circle bg-main-color">
-                                                    <i class="align-middle" data-feather="tag"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h1 class="display-5 mt-1 mb-3">10</h1>
-                                    <div class="mb-0">
-                                        All your active order
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 ">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col mt-0">
-                                            <h5 class="card-title">Inactive Users</h5>
-                                        </div>
-
-                                        <div class="col-auto">
-                                            <div class="avatar">
-                                                <div class="avatar-title rounded-circle bg-main-color">
-                                                    <i class="align-middle" data-feather="tag"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h1 class="display-5 mt-1 mb-3">100</h1>
-                                    <div class="mb-0">
-                                        All your active deals
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 ">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col mt-0">
-                                            <h5 class="card-title">Newly Registered Users</h5>
-                                        </div>
-
-                                        <div class="col-auto">
-                                            <div class="avatar">
-                                                <div class="avatar-title rounded-circle bg-main-color">
-                                                    <i class="align-middle" data-feather="tag"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h1 class="display-5 mt-1 mb-3">7</h1>
-                                    <div class="mb-0">
-                                        All active deals
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Recent Orders -->
-                    <div class="row pt-4 pb-5 mb-5 px-2 mx-0">
-                        <div class="card shadow-none w-100">
-                            <div class="card-header px-4 row mx-0">
-                                <div class="col-md-7 px-0">
-                                    <h5 class="card-title">All Users</h5>
-                                    <h6 class="card-subtitle text-muted">This is the record of all your orders till
-                                        date
+                        <div class="col-md-6">
+                            <div class="card shadow-none w-100">
+                                <div class="card-header px-4">
+                                    <h5 class="card-title bold-text">VENDOR FAQ</h5>
+                                    <h6 class="card-subtitle text-muted">
+                                        This is the record of all vendors
                                     </h6>
                                 </div>
-                                <div class="col-md-5 px-0 d-flex justify-right-sm justify-content-end">
-                                    <a href="create-user.html"
-                                        class="btn text-light bg-main-color rounded-0 mt-3">Create User</a>
+                                <div class="card-body">
+                                    <table id="datatables-basic-one" class="table table-hover  text-sm"
+                                        style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Title</th>
+                                                <th>Text</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Lorem ipsum dolor </td>
+                                                <td>Lorem ipsum dolor
+                                                    sit amet, consectetur
+                                                    adipiscing elit, sed do
+                                                    eiusmod tempor...</td>
+                                                <td> Active</td>
+                                                <td>
+                                                        <a class="btn btn-outline-dark"> More </a>
+                                                    <!-- <a class="btn btn-outline-dark dropdown-toggle" id="moreDropdown"
+                                                        data-toggle="dropdown">
+                                                        More
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right"
+                                                        aria-labelledby="moreDropdown">
+                                                        <a class="dropdown-item border-bottom" href="#">
+                                                            Edit Category
+                                                        </a>
+                                                        <a class="dropdown-item" href="#">
+                                                            Delete
+                                                        </a>
+                                                    </div> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Lorem ipsum dolor </td>
+                                                <td>Lorem ipsum dolor
+                                                        sit amet, consectetur
+                                                        adipiscing elit, sed do
+                                                        eiusmod tempor...</td>
+                                                <td> Active</td>
+                                                <td>     <a class="btn btn-outline-dark">More</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Lorem ipsum dolor </td>
+                                                <td>Lorem ipsum dolor
+                                                        sit amet, consectetur
+                                                        adipiscing elit, sed do
+                                                        eiusmod tempor...</td>
+                                                <td> Active</td>
+                                                <td>    <a class="btn btn-outline-dark">More</a> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                            </div>
-                            <div class="card-body">
-                                <table id="datatables-buttons" class="table table-hover  text-sm" style="width:100%">
-                                    <thead>
-                                        <tr>
-                                            <th>User ID</th>
-                                            <th>User Name</th>
-                                            <th>No of Deals</th>
-                                            <th>Deals Order</th>
-                                            <th>No of Event </th>
-                                            <th>Event Booking </th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>#1983990</td>
-                                            <td> House of Faaji </td>
-                                            <td>20</td>
-                                            <td>220</td>
-                                            <td> 162</td>
-                                            <td>998</td>
-                                            <td>
-                                                <a class="btn btn-outline-dark dropdown-toggle" id="moreDropdown"
-                                                    data-toggle="dropdown">
-                                                    More
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right"
-                                                    aria-labelledby="moreDropdown">
-                                                    <a class="dropdown-item border-bottom" href="activity.html">
-                                                        View Activities
-                                                    </a>
-                                                    <a class="dropdown-item border-bottom" href="#">
-                                                        Suspend/Ban
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        Delete
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>#1983990</td>
-                                            <td> House of Faaji </td>
-                                            <td>20</td>
-                                            <td>220</td>
-                                            <td> 162</td>
-                                            <td>998</td>
-                                            <td>
-                                                <a class="btn btn-outline-dark dropdown-toggle" id="moreDropdown"
-                                                    data-toggle="dropdown">
-                                                    More
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right"
-                                                    aria-labelledby="moreDropdown">
-                                                    <a class="dropdown-item border-bottom" href="activity.html">
-                                                        View Activities
-                                                    </a>
-                                                    <a class="dropdown-item border-bottom" href="#">
-                                                        Suspend/Ban
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        Delete
-                                                    </a>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
                             </div>
                         </div>
                     </div>
+
+
+
 
             </main>
             <footer class="footer">
@@ -603,6 +535,7 @@
         </div>
 
     </div>
+
 
     <svg width="0" height="0" style="position:absolute">
         <defs>

@@ -19,7 +19,7 @@
     <link href="../css/custom.css" rel="stylesheet">
 
     <!-- Sliding plugin  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+    <link rel="stylesheet" href="../css/vendor.min.css">
 
     <script src="../js/settings.js"></script>
 
@@ -498,7 +498,8 @@
                                         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                     </p>
 
-                                    <a class="btn bg-main-color rounded-0 text-light my-3">Manage</a>
+                                    <a href="vendor-policy.html"
+                                        class="btn bg-main-color rounded-0 text-light my-3">Manage</a>
                                 </div>
                             </div>
 
@@ -526,7 +527,8 @@
                                         </p>
                                     </div>
 
-                                    <a class="btn bg-main-color rounded-0 text-light my-3">Manage</a>
+                                    <a href="vendor-faq.html"
+                                        class="btn bg-main-color rounded-0 text-light my-3">Manage</a>
                                 </div>
                             </div>
                         </div>
@@ -571,7 +573,7 @@
                                         <div class="card-header">
                                         </div>
                                         <div class="card-body">
-                            
+
 
                                             <!-- <div class="slider-container">
                                                 <ul class="controls" id="customize-controls"
@@ -610,10 +612,19 @@
 
                                     <div class="py-4">
                                         <h5 class="my-4 bold-text">Vendor Gallery</h5>
-                                        <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100">
+                                        <!-- <img src="../img/photos/unsplash-3.jpg" class="rounded-0 w-100"> -->
+                                        <div class="cz-carousel cz-controls-static cz-dots-enabled cz-dots-light cz-dots-inside"
+                                            style="max-width: 50rem;">
+                                            <div class="cz-carousel-inner"
+                                                data-carousel-options="{&quot;loop&quot;: false}">
+                                                <img src="../img/photos/unsplash-3.jpg" class="w-100" alt="Image" />
+                                                <img src="../img/photos/unsplash-1.jpg" class="w-100" alt="Image" />
+                                                <img src="../img/photos/unsplash-2.jpg" class="w-100" alt="Image" />
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <a href="manage-gallery.htm"
+                                    <a href="vendor-gallery.html"
                                         class="btn bg-main-color rounded-0 text-light my-3">Manage</a>
                                 </div>
                             </div>
@@ -735,35 +746,13 @@
             </symbol>
         </defs>
     </svg>
+
+    
+    <!-- carousel script -->
+    <script src="../js/vendor.min.js"></script>
+
     <script src="../js/app.js"></script>
 
-    <!-- carousel script -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script>
-        const slider = tns({
-            container: '.my-slider',
-            loop: true,
-            items: 1,
-            slideBy: 'page',
-            nav: false,
-            autoplay: true,
-            speed: 400,
-            autoplayButtonOutput: false,
-            mouseDrag: true,
-            lazyload: true,
-            controlsContainer: "#customize-controls",
-            responsive: {
-                640: {
-                    items: 1,
-                },
-
-                768: {
-                    items: 1,
-                }
-            }
-
-        });
-    </script> -->
 
     <!-- Jquery for data-table -->
     <script>

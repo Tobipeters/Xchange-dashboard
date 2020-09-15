@@ -381,7 +381,7 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item"><a href="vendor.html">Single Vendor</a></li>
+                                    <li class="breadcrumb-item"><a href="single-vendor.html">Single Vendors</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Manage Vendor Gallery</li>
                                 </ol>
                             </nav>
@@ -403,15 +403,19 @@
                                 </div>
                                 <div class="card-body ">
                                     <form class="py-3">
-                                        <div class="form-group">
-                                            <label for="firstName">Upload Image:</label>
-                                            <div class="form-control form-control-lg p-0 thumbnail-container bg-light">
-                                                <div class="upload-icon">
-                                                    <img src="../img/upload-icon.png" class="w-100">
+                                        <div class="row">
+                                            <div class="col form-group">
+                                                <label for="firstName">Upload Images:</label>
+                                                <div
+                                                    class="form-control form-control-lg p-0 thumbnail-container bg-light">
+                                                    <div class="upload-icon">
+                                                        <img src="../img/upload-icon.png" class="w-100">
+                                                        <small class="text-center">Select a File</small>
+                                                    </div>
+                                                    <input
+                                                        class="form-control form-control-lg rounded-0 bg-light input-thumbnail"
+                                                        type="file">
                                                 </div>
-                                                <input
-                                                    class="form-control form-control-lg rounded-0 bg-light input-thumbnail"
-                                                    type="file">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -421,7 +425,7 @@
                                             </select>
                                         </div>
                                         <button type="submit" class="btn bg-main-color rounded-0 my-2 text-light px-4">
-                                            Upload
+                                            Create
                                         </button>
                                     </form>
 
@@ -444,48 +448,38 @@
                                                 <th>#</th>
                                                 <th>Thumbnail</th>
                                                 <th>Status</th>
-                                                <th>Actions</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
                                                 <td>
-                                                    <img src="../img//photos/unsplash-1.jpg" height="35" width="35"
-                                                        class="rounded-circle mr-2" />
+                                                    <img src="../img/avatars/avatar-5.jpg" width="50" height="50"
+                                                        class="rounded-circle" />
                                                 </td>
                                                 <td> Active</td>
                                                 <td>
-                                                    <a class="btn btn-outline-dark">
-                                                        More
-                                                    </a>
+                                                    <a class="btn btn-outline-dark"> More </a>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
                                                 <td>
-                                                    <img src="../img//photos/unsplash-1.jpg" height="35" width="35"
-                                                        class="rounded-circle mr-2" />
+                                                    <img src="../img/avatars/avatar-5.jpg" width="50" height="50"
+                                                        class="rounded-circle" />
                                                 </td>
                                                 <td> Active</td>
-                                                <td>
-                                                    <a class="btn btn-outline-dark">
-                                                        More
-                                                    </a>
-                                                </td>
+                                                <td> <a class="btn btn-outline-dark">More</a></td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
                                                 <td>
-                                                    <img src="../img//photos/unsplash-1.jpg" height="35" width="35"
-                                                        class="rounded-circle mr-2" />
+                                                    <img src="../img/avatars/avatar-5.jpg" width="50" height="50"
+                                                        class="rounded-circle" />
                                                 </td>
                                                 <td> Active</td>
-                                                <td>
-                                                    <a class="btn btn-outline-dark">
-                                                        More
-                                                    </a>
-                                                </td>
+                                                <td> <a class="btn btn-outline-dark">More</a> </td>
                                             </tr>
                                         </tbody>
                                     </table>

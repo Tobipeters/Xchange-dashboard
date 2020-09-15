@@ -9,7 +9,7 @@
     <meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
     <meta name="author" content="Bootlab">
 
-    <title>Admin-Dashboard | All Users </title>
+    <title>Admin-Dashboard | Activities </title>
 
     <!-- roboto font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -373,12 +373,13 @@
                     <div class="row mx-0 mb-md-5 mb-sm-4">
                         <div class="col-md-6 header mb-0">
                             <h1 class="header-title mb-2">
-                                All Users
+                                Activities
                             </h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">All Users</li>
+                                    <li class="breadcrumb-item"><a href="user.html">All User</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Activities</li>
                                 </ol>
                             </nav>
                         </div>
@@ -390,180 +391,52 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-3 ">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col mt-0">
-                                            <h5 class="card-title">Total Number of Users</h5>
-                                        </div>
-
-                                        <div class="col-auto">
-                                            <div class="avatar">
-                                                <div class="avatar-title rounded-circle bg-main-color">
-                                                    <i class="align-middle" data-feather="tag"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h1 class="display-5 mt-1 mb-3">32</h1>
-                                    <div class="mb-0">
-                                        All your active deals
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 ">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col mt-0">
-                                            <h5 class="card-title text-dark">Suspended Users</h5>
-                                        </div>
-
-                                        <div class="col-auto">
-                                            <div class="avatar">
-                                                <div class="avatar-title rounded-circle bg-main-color">
-                                                    <i class="align-middle" data-feather="tag"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h1 class="display-5 mt-1 mb-3">10</h1>
-                                    <div class="mb-0">
-                                        All your active order
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 ">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col mt-0">
-                                            <h5 class="card-title">Inactive Users</h5>
-                                        </div>
-
-                                        <div class="col-auto">
-                                            <div class="avatar">
-                                                <div class="avatar-title rounded-circle bg-main-color">
-                                                    <i class="align-middle" data-feather="tag"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h1 class="display-5 mt-1 mb-3">100</h1>
-                                    <div class="mb-0">
-                                        All your active deals
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 ">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col mt-0">
-                                            <h5 class="card-title">Newly Registered Users</h5>
-                                        </div>
-
-                                        <div class="col-auto">
-                                            <div class="avatar">
-                                                <div class="avatar-title rounded-circle bg-main-color">
-                                                    <i class="align-middle" data-feather="tag"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h1 class="display-5 mt-1 mb-3">7</h1>
-                                    <div class="mb-0">
-                                        All active deals
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <!-- Recent Orders -->
-                    <div class="row pt-4 pb-5 mb-5 px-2 mx-0">
+                    <div class="row pb-5 mb-5 px-2 mx-0">
                         <div class="card shadow-none w-100">
                             <div class="card-header px-4 row mx-0">
-                                <div class="col-md-7 px-0">
-                                    <h5 class="card-title">All Users</h5>
-                                    <h6 class="card-subtitle text-muted">This is the record of all your orders till
-                                        date
+                                <div class="col-md-12 px-0">
+                                    <h5 class="card-title">ACTIVITY LOG</h5>
+                                    <h6 class="card-subtitle text-muted">This is the activity log of bosun Jones
                                     </h6>
-                                </div>
-                                <div class="col-md-5 px-0 d-flex justify-right-sm justify-content-end">
-                                    <a href="create-user.html"
-                                        class="btn text-light bg-main-color rounded-0 mt-3">Create User</a>
                                 </div>
                             </div>
                             <div class="card-body">
                                 <table id="datatables-buttons" class="table table-hover  text-sm" style="width:100%">
                                     <thead>
                                         <tr>
-                                            <th>User ID</th>
-                                            <th>User Name</th>
-                                            <th>No of Deals</th>
-                                            <th>Deals Order</th>
-                                            <th>No of Event </th>
-                                            <th>Event Booking </th>
+                                            <th>#</th>
+                                            <th>Date & Time</th>
+                                            <th>Author</th>
+                                            <th>IP address</th>
+                                            <th>Description </th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>#1983990</td>
-                                            <td> House of Faaji </td>
-                                            <td>20</td>
-                                            <td>220</td>
-                                            <td> 162</td>
-                                            <td>998</td>
+                                            <td>2930</td>
+                                            <td>22/01/2020 2:17PM </td>
+                                            <td>Bosun Jones</td>
+                                            <td> 11.566.64.12 </td>
+                                            <td> Read a story</td>
                                             <td>
-                                                <a class="btn btn-outline-dark dropdown-toggle" id="moreDropdown"
-                                                    data-toggle="dropdown">
-                                                    More
+                                                <a class="btn btn-outline-dark" href="#">
+                                                    View
                                                 </a>
-                                                <div class="dropdown-menu dropdown-menu-right"
-                                                    aria-labelledby="moreDropdown">
-                                                    <a class="dropdown-item border-bottom" href="activity.html">
-                                                        View Activities
-                                                    </a>
-                                                    <a class="dropdown-item border-bottom" href="#">
-                                                        Suspend/Ban
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        Delete
-                                                    </a>
-                                                </div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>#1983990</td>
-                                            <td> House of Faaji </td>
-                                            <td>20</td>
-                                            <td>220</td>
-                                            <td> 162</td>
-                                            <td>998</td>
+                                            <td>2930</td>
+                                            <td>22/01/2020 2:17PM </td>
+                                            <td>Bosun Jones</td>
+                                            <td> 11.566.64.12 </td>
+                                            <td> Read a story</td>
                                             <td>
-                                                <a class="btn btn-outline-dark dropdown-toggle" id="moreDropdown"
-                                                    data-toggle="dropdown">
-                                                    More
+                                                <a class="btn btn-outline-dark" href="#">
+                                                    View
                                                 </a>
-                                                <div class="dropdown-menu dropdown-menu-right"
-                                                    aria-labelledby="moreDropdown">
-                                                    <a class="dropdown-item border-bottom" href="activity.html">
-                                                        View Activities
-                                                    </a>
-                                                    <a class="dropdown-item border-bottom" href="#">
-                                                        Suspend/Ban
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        Delete
-                                                    </a>
-                                                </div>
                                             </td>
                                         </tr>
                                     </tbody>
