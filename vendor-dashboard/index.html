@@ -111,13 +111,11 @@
                 <div class="navbar-collapse collapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown ml-lg-2">
-                            <a class="nav-link dropdown-toggle position-relative" href="#" id="alertsDropdown"
-                                data-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle position-relative" href="#" id="alertsDropdown" data-toggle="dropdown">
                                 <i class="align-middle fas fa-bell"></i>
                                 <span class="indicator"></span>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0"
-                                aria-labelledby="alertsDropdown">
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
                                 <div class="dropdown-menu-header">
                                     4 New Notifications
                                 </div>
@@ -129,8 +127,7 @@
                                             </div>
                                             <div class="col-10">
                                                 <div class="text-dark">Order Completed</div>
-                                                <div class="text-muted small mt-1">Your order #1000 has been processed
-                                                    successfully.
+                                                <div class="text-muted small mt-1">Your order #1000 has been processed successfully.
                                                 </div>
                                                 <div class="text-muted small mt-1">2h ago</div>
                                             </div>
@@ -143,8 +140,7 @@
                                             </div>
                                             <div class="col-10">
                                                 <div class="text-dark">Order Cancelled</div>
-                                                <div class="text-muted small mt-1">Your order #1000 has been processed
-                                                    successfully.
+                                                <div class="text-muted small mt-1">Your order #1000 has been processed successfully.
                                                 </div>
                                                 <div class="text-muted small mt-1">12hours ago</div>
                                             </div>
@@ -157,8 +153,7 @@
                                             </div>
                                             <div class="col-10">
                                                 <div class="text-dark">Order Completed</div>
-                                                <div class="text-muted small mt-1">Your order #1000 has been processed
-                                                    successfully.
+                                                <div class="text-muted small mt-1">Your order #1000 has been processed successfully.
                                                 </div>
                                                 <div class="text-muted small mt-1">2h ago</div>
                                             </div>
@@ -171,8 +166,7 @@
                                             </div>
                                             <div class="col-10">
                                                 <div class="text-dark">Order Cancelled</div>
-                                                <div class="text-muted small mt-1">Your order #1000 has been processed
-                                                    successfully.
+                                                <div class="text-muted small mt-1">Your order #1000 has been processed successfully.
                                                 </div>
                                                 <div class="text-muted small mt-1">2h ago</div>
                                             </div>
@@ -185,10 +179,8 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown ml-lg-2">
-                            <a class="nav-link dropdown-toggle position-relative" href="#" id="userDropdown"
-                                data-toggle="dropdown">
-                                <img src="../img/avatars/avatar.jpg" width="25" height="25"
-                                    class="img-fluid rounded-circle mb-2" alt="Grill Spot" />
+                            <a class="nav-link dropdown-toggle position-relative" href="#" id="userDropdown" data-toggle="dropdown">
+                                <img src="../img/avatars/avatar.jpg" width="25" height="25" class="img-fluid rounded-circle mb-2" alt="Grill Spot" />
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#"><i class="align-middle mr-1 fas fa-fw fa-user"></i>
@@ -211,11 +203,11 @@
                             <h1 class="header-title">
                                 Vendor Dashboard
                             </h1>
-                            <p class="header-subtitle mb-0">Hey, Grill Spot!</p>
+                            <p class="header-subtitle mb-0">Hello there, Grill Spot!</p>
                         </div>
                         <div class="col-md-6 position-relative pt-1">
-                            <div class="d-inline-block float-md-right text-dark bg-light py-1 px-2 mb-3">
-                                <i class="align-middle mr-2 fas fa-fw fa-clock"></i>
+                            <div class="d-inline-block float-md-right text-light py-1 px-2 mb-3">
+                                <i class="align-middle mr-2" data-feather="clock"></i>
                                 <span>Last Login: 22/01/2020</span>
                             </div>
                         </div>
@@ -368,13 +360,11 @@
                         <div class="card shadow-none w-100">
                             <div class="card-header px-4">
                                 <h5 class="card-title">NEW ORDERS</h5>
-                                <h6 class="card-subtitle text-muted">This is the record of all your orders till
-                                    date
+                                <h6 class="card-subtitle text-muted">This is the record of all your orders till date
                                 </h6>
                             </div>
                             <div class="card-body">
-                                <table id="datatables-buttons" class="table table-hover  font-size-md"
-                                    style="width:100%">
+                                <table id="datatables-buttons" class="table table-hover  font-size-md" style="width:100%">
                                     <thead>
                                         <tr>
                                             <th>Order ID</th>
@@ -393,11 +383,11 @@
                                             <td> &#8358;1,000</td>
                                             <td> Deal (2), Events (2)</td>
                                             <td>22/01/2020</td>
-                                            <td> <span class="badge badge-warning px-3 py-2">New</span> </td>
+                                            <td> <span class="badge badge-warning px-3 py-2 rounded-0">New</span> </td>
                                             <td>
-                                                <button class="btn btn-outline-dark">
-                                                    More
-                                                </button>
+                                                <a href="single-order.html" class="text-orange fs-12">
+                                                    <i class="mr-2 align-middle" data-feather="eye"></i> More Details
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -406,11 +396,40 @@
                                             <td> &#8358;1,000</td>
                                             <td> Deal (2), Events (2)</td>
                                             <td>22/01/2020</td>
-                                            <td> <span class="badge badge-danger px-3 py-2">Cancelled</span> </td>
+                                            <td> <span class="badge badge-danger px-3 py-2 rounded-0">Cancelled</span>
+                                            </td>
                                             <td>
-                                                <button class="btn btn-outline-dark ">
-                                                    More
-                                                </button>
+                                                <a href="single-order.html" class="text-orange fs-12">
+                                                    <i class="mr-2 align-middle" data-feather="eye"></i> More Details
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#1983990</td>
+                                            <td>Bosun Jone</td>
+                                            <td> &#8358;1,000</td>
+                                            <td> Deal (2), Events (2)</td>
+                                            <td>22/01/2020</td>
+                                            <td> <span class="badge badge-success px-3 py-2 rounded-0">Completed</span>
+                                            </td>
+                                            <td>
+                                                <a href="single-order.html" class="text-orange fs-12">
+                                                    <i class="mr-2 align-middle" data-feather="eye"></i> More Details
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>#1983990</td>
+                                            <td>Bosun Jone</td>
+                                            <td> &#8358;1,000</td>
+                                            <td> Deal (2), Events (2)</td>
+                                            <td>22/01/2020</td>
+                                            <td> <span class="badge badge-orange px-3 py-2 rounded-0">Processing</span>
+                                            </td>
+                                            <td>
+                                                <a href="single-order.html" class="text-orange fs-12">
+                                                    <i class="mr-2 align-middle" data-feather="eye"></i> More Details
+                                                </a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -420,7 +439,7 @@
                     </div>
 
                     <!-- Top Selling Deals -->
-                    <div class="card">
+                    <!-- <div class="card">
                         <div class="card-header border-bottom">
                             <h5 class="card-title mb-0">Your #1 Top Selling Deal</h5>
                         </div>
@@ -429,8 +448,7 @@
                                 <div class="col-md-5 border-right">
                                     <div class="row py-4">
                                         <div class="col-md-4 justify-content-center d-flex">
-                                            <img src="../img/avatars/gallery6.png" class="rounded-circle" width="100"
-                                                height="100" />
+                                            <img src="../img/avatars/gallery6.png" class="rounded-circle" width="100" height="100" />
                                         </div>
                                         <div class="col-md-8">
                                             <h4 class="mt-2 mb-4 font-weight-bold">Deluxe Room</h4>
@@ -475,7 +493,7 @@
                                 </div>
                             </duv>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
 
@@ -523,24 +541,24 @@
     <script src="../js/app.js"></script>
     <!-- Jquery for data-table -->
     <script>
-        $(function () {
+        $(function() {
             // Datatables basic
             $('#datatables-basic, #datatables-basic-one, #datatables-basic-two, #datatables-basic-three, #datatables-basic-four, #datatables-basic-five, #datatables-basic-six').DataTable({
                 responsive: true
             });
             // Datatables with Buttons
-            var datatablesButtons = $('#datatables-buttons').DataTable({
-                lengthChange: !1,
-                buttons: ["copy", "print"],
-                responsive: true
-            });
-            datatablesButtons.buttons().container().appendTo("#datatables-buttons_wrapper .col-md-6:eq(0)")
+            // var datatablesButtons = $('#datatables-buttons').DataTable({
+            //     lengthChange: !1,
+            //     buttons: ["copy", "print"],
+            //     responsive: true
+            // });
+            // datatablesButtons.buttons().container().appendTo("#datatables-buttons_wrapper .col-md-6:eq(0)")
         });
     </script>
     <!-- Jquery for chart -->
 
     <script>
-        $(function () {
+        $(function() {
             // Line chart
             new Chart(document.getElementById("chartjs-line"), {
                 type: "line",

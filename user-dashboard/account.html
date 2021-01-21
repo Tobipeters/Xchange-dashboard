@@ -22,6 +22,76 @@
 </head>
 
 <body>
+    <!-- Edit Address Modal -->
+    <div class="modal fade" id="editAddress" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title">Update address</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <form>
+                        <div class="form-group">
+                            <label for="title">Address Title</label>
+                            <input type="text" class="form-control form-control-lg rounded-0 bg-transparent" placeholder="Home address" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Address">Address:</label>
+                            <textarea class="form-control rounded-0 bg-transparent" rows="5" placeholder="789, Rumuomasi Road, Rumu Avenue">
+                            </textarea>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Make this my primary address
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-outline-main rounded-0 my-2">
+                            <i class="mr-2 align-vertical" data-feather="check"></i>
+                            Add Address
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Address Modal -->
+    <div class="modal fade" id="deleteAddress" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title">Confirm your action</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="text-center py-3">
+                        <i data-feather="trash-2" class="text-orange" style="width: 40px; height: 40px;"></i>
+                        <p class="my-2">Are you sure you want to delete</p>
+                        <h3 class="text-orange">789, Rumuomasi Road, Rumu Avenue</h3>
+                    </div>
+                    <hr class="my-3" />
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-outline-main rounded-0 my-2">
+                            <i class="mr-2 align-vertical" data-feather="check"></i>
+                            Proceed
+                        </button>
+                        <button type="submit" class="btn bg-transparent rounded-0 my-2">
+                            <i class="mr-2 align-vertical" data-feather="x"></i>
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="splash active">
         <div class="splash-icon"></div>
@@ -108,13 +178,11 @@
                 <div class="navbar-collapse collapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown ml-lg-2">
-                            <a class="nav-link dropdown-toggle position-relative" href="#" id="alertsDropdown"
-                                data-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle position-relative" href="#" id="alertsDropdown" data-toggle="dropdown">
                                 <i class="align-middle fas fa-bell"></i>
                                 <span class="indicator"></span>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0"
-                                aria-labelledby="alertsDropdown">
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
                                 <div class="dropdown-menu-header">
                                     4 New Notifications
                                 </div>
@@ -126,8 +194,7 @@
                                             </div>
                                             <div class="col-10">
                                                 <div class="text-dark">Order Completed</div>
-                                                <div class="text-muted small mt-1">Your order #1000 has been processed
-                                                    successfully.
+                                                <div class="text-muted small mt-1">Your order #1000 has been processed successfully.
                                                 </div>
                                                 <div class="text-muted small mt-1">2h ago</div>
                                             </div>
@@ -140,8 +207,7 @@
                                             </div>
                                             <div class="col-10">
                                                 <div class="text-dark">Order Cancelled</div>
-                                                <div class="text-muted small mt-1">Your order #1000 has been processed
-                                                    successfully.
+                                                <div class="text-muted small mt-1">Your order #1000 has been processed successfully.
                                                 </div>
                                                 <div class="text-muted small mt-1">12hours ago</div>
                                             </div>
@@ -154,8 +220,7 @@
                                             </div>
                                             <div class="col-10">
                                                 <div class="text-dark">Order Completed</div>
-                                                <div class="text-muted small mt-1">Your order #1000 has been processed
-                                                    successfully.
+                                                <div class="text-muted small mt-1">Your order #1000 has been processed successfully.
                                                 </div>
                                                 <div class="text-muted small mt-1">2h ago</div>
                                             </div>
@@ -168,8 +233,7 @@
                                             </div>
                                             <div class="col-10">
                                                 <div class="text-dark">Order Cancelled</div>
-                                                <div class="text-muted small mt-1">Your order #1000 has been processed
-                                                    successfully.
+                                                <div class="text-muted small mt-1">Your order #1000 has been processed successfully.
                                                 </div>
                                                 <div class="text-muted small mt-1">2h ago</div>
                                             </div>
@@ -182,10 +246,8 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown ml-lg-2">
-                            <a class="nav-link dropdown-toggle position-relative" href="#" id="userDropdown"
-                                data-toggle="dropdown">
-                                <img src="../img/avatars/user-avatar.png" width="25" height="25"
-                                    class="img-fluid rounded-circle mb-2" alt="Bosun Jones" />
+                            <a class="nav-link dropdown-toggle position-relative" href="#" id="userDropdown" data-toggle="dropdown">
+                                <img src="../img/avatars/user-avatar.png" width="25" height="25" class="img-fluid rounded-circle mb-2" alt="Bosun Jones" />
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#"><i class="align-middle mr-1 fas fa-fw fa-user"></i>
@@ -224,188 +286,433 @@
                             <ul class="nav nav-tabs mr-md-5" role="tablist">
                                 <li class="nav-item nav-link pr-md-5 py-3  ">
                                     <h5 class="mb-0 ">
-                                        <strong>MY ACCOUNT</strong>
+                                        <strong>NAVIGATE</strong>
                                     </h5>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link pr-md-5  active" href="#vertical-icon-tab-1" data-toggle="tab"
-                                        role="tab">
-                                        Settings
+                                    <a class="nav-link pr-md-5  active" href="#vertical-icon-tab-1" data-toggle="tab" role="tab">
+                                        Profile Settings
                                     </a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link pr-md-5 " href="#vertical-icon-tab-2" data-toggle="tab"
-                                        role="tab">
+                                    <a class="nav-link pr-md-5" href="#vertical-icon-tab-2" data-toggle="tab" role="tab">
+                                        Interest Filters
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link pr-md-5 " href="#vertical-icon-tab-3" data-toggle="tab" role="tab">
                                         Addresses
                                     </a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link pr-md-5 " href="#vertical-icon-tab-3" data-toggle="tab"
-                                        role="tab">
+                                    <a class="nav-link pr-md-5 " href="#vertical-icon-tab-4" data-toggle="tab" role="tab">
+                                        Profile Picture
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link pr-md-5 " href="#vertical-icon-tab-5" data-toggle="tab" role="tab">
                                         Security
                                     </a>
                                 </li>
                             </ul>
                             <div class="tab-content p-0">
 
-                                <!-- Settings Tab -->
+                                <!--Profile Settings Tab -->
                                 <div class="tab-pane active" id="vertical-icon-tab-1" role="tabpanel">
+                                    <div class="py-3 px-4 border-bottom">
+                                        <h4 class="tab-title text-muted mb-0">Profile Settings</h4>
+                                    </div>
                                     <div class="row mx-0 p-3">
-                                        <div class="col-md-7">
-                                            <h4 class="tab-title text-muted mb-5">Basic Information</h4>
+                                        <div class="col-md-12">
                                             <form>
                                                 <div class="row">
-                                                    <div class="col-md-6 form-group">
-                                                        <label for="firstName">First Name:</label>
-                                                        <input class="form-control form-control-lg rounded-0 bg-light"
-                                                            type="text" />
-                                                    </div>
-                                                    <div class="col-md-6 form-group">
-                                                        <label for="lastName">Last Name:</label>
-                                                        <input class="form-control form-control-lg rounded-0 bg-light"
-                                                            type="text" />
+                                                    <div class="col-md-12 form-group">
+                                                        <label for="firstName">Full Name:</label>
+                                                        <input class="form-control form-control-lg rounded-0" type="text" />
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col form-group">
                                                         <label for="firstName">Email Address:</label>
-                                                        <input class="form-control form-control-lg rounded-0 bg-light"
-                                                            type="text" />
+                                                        <input class="form-control form-control-lg rounded-0" type="text" />
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-6 form-group">
                                                         <label for="firstName">Phone Number:</label>
-                                                        <input class="form-control form-control-lg rounded-0 bg-light"
-                                                            type="text" />
+                                                        <input class="form-control form-control-lg rounded-0" type="text" />
                                                     </div>
                                                     <div class="col-md-6 form-group">
                                                         <label for="lastName">Sex:</label>
-                                                        <input class="form-control form-control-lg rounded-0 bg-light"
-                                                            type="text" />
+                                                        <input class="form-control form-control-lg rounded-0" type="text" />
                                                     </div>
                                                 </div>
+
                                                 <div class="row">
                                                     <div class="col form-group">
-                                                        <label for="firstName">Birthday:</label>
-                                                        <input class="form-control form-control-lg rounded-0 bg-light"
-                                                            type="text" />
+                                                        <label for="firstName">Country:</label>
+                                                        <input class="form-control form-control-lg rounded-0" type="text" />
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-6 form-group">
                                                         <label for="firstName">State:</label>
-                                                        <input class="form-control form-control-lg rounded-0 bg-light"
-                                                            type="text" />
+                                                        <input class="form-control form-control-lg rounded-0" type="text" />
                                                     </div>
                                                     <div class="col-md-6 form-group">
                                                         <label for="lastName">City:</label>
-                                                        <input class="form-control form-control-lg rounded-0 bg-light"
-                                                            type="text" />
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col form-group">
-                                                        <label for="firstName">Country:</label>
-                                                        <input class="form-control form-control-lg rounded-0 bg-light"
-                                                            type="text" />
+                                                        <input class="form-control form-control-lg rounded-0" type="text" />
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col form-group">
                                                         <label for="firstName">Address:</label>
-                                                        <textarea class="form-control rounded-0 bg-light" rows="5"
-                                                            placeholder="Textarea"></textarea>
+                                                        <textarea class="form-control rounded-0" rows="5" placeholder="Textarea"></textarea>
                                                     </div>
                                                 </div>
 
-                                                <button type="submit"
-                                                    class="btn bg-main-color rounded-0 my-2 text-light px-4">
-                                                    Update
+                                                <button type="submit" class="btn btn-outline-main rounded-0 my-2">
+                                                    <i class="mr-2 align-vertical" data-feather="check"></i>
+                                                    Update Profile
                                                 </button>
                                             </form>
                                         </div>
-                                        <div class="col-md-5">
-                                            <div class="d-flex justify-content-center">
-                                                <div class="text-center">
-                                                    <img src="../img//avatars/user-avatar.png" width="100" height="100"
-                                                        class="rounded-circle" alt="Bosun Jones" />
-                                                    <button
-                                                        class="btn btn-light d-block rounded-0 mx-auto my-2">Upload</button>
-                                                    <small class="py-3">For best results, use an image at least 128px by
-                                                        128px in .jpg format</small>
+                                    </div>
+                                </div>
+
+                                <!-- Interest filter Tab -->
+                                <div class="tab-pane interest-tab" id="vertical-icon-tab-2" role="tabpanel">
+                                    <div class="row py-4 px-2 mx-0">
+                                        <div class="card shadow-none w-100">
+                                            <div class="card-header border-bottom px-4 row">
+                                                <div class="col-md-7">
+                                                    <h4 class="mb-0">Interest Filters</h4>
                                                 </div>
+                                            </div>
+                                            <div class="card-body px-4 py-3">
+                                                <div class="row">
+                                                    <div class="col-md-4 mb-4">
+                                                        <img src="../img/photos/if-music.png" height="165" class="rounded-0 w-100">
+                                                        <div class="form-group">
+                                                            <label class="custom-control custom-checkbox my-2">
+                                                                <input type="checkbox" class="custom-control-input">
+                                                                <span class="custom-control-label pt-1 pl-2 fw-600">
+                                                                    MUSIC
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-4">
+                                                        <img src="../img/photos/if-fashion.png" height="165" class="rounded-0 w-100">
+                                                        <div class="form-group">
+                                                            <label class="custom-control custom-checkbox my-2">
+                                                                <input type="checkbox" class="custom-control-input">
+                                                                <span class="custom-control-label pt-1 pl-2 fw-600">
+                                                                    FASHION
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-4">
+                                                        <img src="../img/photos/if-travel.png" height="165" class="rounded-0 w-100">
+                                                        <div class="form-group">
+                                                            <label class="custom-control custom-checkbox my-2">
+                                                                <input type="checkbox" class="custom-control-input">
+                                                                <span class="custom-control-label pt-1 pl-2 fw-600">
+                                                                    TRAVEL
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-4">
+                                                        <img src="../img/photos/if-religion.png" height="165" class="rounded-0 w-100">
+                                                        <div class="form-group">
+                                                            <label class="custom-control custom-checkbox my-2">
+                                                                <input type="checkbox" class="custom-control-input">
+                                                                <span class="custom-control-label pt-1 pl-2 fw-600">
+                                                                    RELIGION
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-4">
+                                                        <img src="../img/photos/if-sex.png" height="165" class="rounded-0 w-100">
+                                                        <div class="form-group">
+                                                            <label class="custom-control custom-checkbox my-2">
+                                                                <input type="checkbox" class="custom-control-input">
+                                                                <span class="custom-control-label pt-1 pl-2 fw-600">
+                                                                    SEX
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-4">
+                                                        <img src="../img/photos/if-beauty&health.png" height="165" class="rounded-0 w-100">
+                                                        <div class="form-group">
+                                                            <label class="custom-control custom-checkbox my-2">
+                                                                <input type="checkbox" class="custom-control-input">
+                                                                <span class="custom-control-label pt-1 pl-2 fw-600">
+                                                                    BEAUTY &amp; HEALTH
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-4">
+                                                        <img src="../img/photos/if-politics.png" height="165" class="rounded-0 w-100">
+                                                        <div class="form-group">
+                                                            <label class="custom-control custom-checkbox my-2">
+                                                                <input type="checkbox" class="custom-control-input">
+                                                                <span class="custom-control-label pt-1 pl-2 fw-600">
+                                                                    POLITICS
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-4">
+                                                        <img src="../img/photos/if-finance.png" height="165" class="rounded-0 w-100">
+                                                        <div class="form-group">
+                                                            <label class="custom-control custom-checkbox my-2">
+                                                                <input type="checkbox" class="custom-control-input">
+                                                                <span class="custom-control-label pt-1 pl-2 fw-600">
+                                                                    FINANCE
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mb-4">
+                                                        <img src="../img/photos/if-news&gossip.png" height="165" class="rounded-0 w-100">
+                                                        <div class="form-group">
+                                                            <label class="custom-control custom-checkbox my-2">
+                                                                <input type="checkbox" class="custom-control-input">
+                                                                <span class="custom-control-label pt-1 pl-2 fw-600">
+                                                                    NEWS &amp; GOSSIPS
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <button type="submit" class="btn btn-outline-main rounded-0 my-2">
+                                                        <i class="mr-2 align-vertical"
+                                                            data-feather="check"></i>
+                                                       Update Interest
+                                                    </button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- Address Tab -->
-                                <div class="tab-pane" id="vertical-icon-tab-2" role="tabpanel">
-
-                                    <ul class="list-group">
-                                        <li class="list-group-item ">
+                                <div class="tab-pane" id="vertical-icon-tab-3" role="tabpanel">
+                                    <div class="card border-0 shadow-none">
+                                        <div class="card-header border-bottom">
                                             <h4 class="tab-title mb-0">Addresses</h4>
-                                        </li>
-                                        <li class="list-group-item ">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <span class="">123, Lagos Street, Lagos Avenue, Lagos,
-                                                        Nigeria</span>
-                                                    <small class="badge-light py-1 px-2 mx-2">Primary</small>
-                                                </div>
-                                                <div class="col-md-6 ">
-                                                    <div class="text-right d-block">
-                                                        <a href="#" class="text-muted pr-2 border-right">Edit </a>
-                                                        <a href="#" class="text-muted pl-2 ">Edit </a>
+                                        </div>
+                                        <div class="card-body">
+                                            <!-- Tabs -->
+                                            <div class="row pt-3 pb-5 mb-0">
+                                                <div class="col">
+                                                    <div class="tab payment-tab w-100">
+                                                        <ul class="nav nav-tabs " role="tablist">
+
+                                                            <li class="nav-item">
+                                                                <a class="nav-link active px-4" href="#tab-1" data-toggle="tab" role="tab">
+                                                                    <i class="mr-2 align-middle" data-feather="map-pin"></i> All Addresses
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link px-4" href="#tab-2" data-toggle="tab" role="tab">
+                                                                    <i class="mr-2 align-middle" data-feather="plus-circle"></i> Add New
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+
+
+                                                        <div class="tab-content px-0 bg-light">
+
+                                                            <!-- All Addresses Tab Content -->
+                                                            <div class="tab-pane active" id="tab-1" role="tabpanel">
+                                                                <div class="card shadow-none bg-light">
+                                                                    <!-- <div class="card-header px-4">
+                                                                <h5 class="card-title">USAGE HISTORY</h5>
+                                                                <h6 class="card-subtitle text-muted">This is the record of all stories
+                                                            till date</h6>
+                                                            </div> -->
+                                                                    <div class="card-body ">
+                                                                        <table id="datatables-basic-one" class="table table-hover font-size-md " style="width:100%">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Title </th>
+                                                                                    <th>Address</th>
+                                                                                    <th>Role</th>
+                                                                                    <th>Action </th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>Home Address</td>
+                                                                                    <td>789, Rumuomasi Road, Rumu Avenue
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <div class="d-inline-block bg-main-color text-light py-2 px-3">
+                                                                                            Primary
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <button data-toggle="modal" data-target="#editAddress" class="text-orange fs-12 font-weight-bold d-inline-block border-0 bg-transparent">
+                                                                                            <i class="align-middle mr-1"
+                                                                                                data-feather="edit-3"></i>
+                                                                                            Edit
+                                                                                        </button>
+                                                                                        <div class="mx-2 d-inline-block">
+                                                                                            |
+                                                                                        </div>
+                                                                                        <button data-toggle="modal" data-target="#deleteAddress" class="text-orange fs-12 font-weight-bold d-inline-block border-0 bg-transparent">
+                                                                                            <i class="align-middle mr-1"
+                                                                                                data-feather="trash-2"></i>
+                                                                                            Delete
+                                                                                        </button>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Office Address</td>
+                                                                                    <td>789, Rumuomasi Road, Rumu Avenue
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <!-- <div
+                                                                                    class="d-inline-block bg-main-color p-3">
+                                                                                    Primary
+                                                                                </div> -->
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <button data-toggle="modal" data-target="#editAddress" class="text-orange fs-12 font-weight-bold d-inline-block border-0 bg-transparent">
+                                                                                            <i class="align-middle mr-1"
+                                                                                                data-feather="edit-3"></i>
+                                                                                            Edit
+                                                                                        </button>
+                                                                                        <div class="mx-2 d-inline-block">
+                                                                                            |
+                                                                                        </div>
+                                                                                        <button data-toggle="modal" data-target="#deleteAddress" class="text-orange fs-12 font-weight-bold d-inline-block border-0 bg-transparent">
+                                                                                            <i class="align-middle mr-1"
+                                                                                                data-feather="trash-2"></i>
+                                                                                            Delete
+                                                                                        </button>
+                                                                                    </td>
+                                                                                </tr>
+
+
+                                                                            </tbody>
+
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Add New Tab Content -->
+                                                            <div class="tab-pane" id="tab-2" role="tabpanel">
+                                                                <div class="card shadow-none bg-light">
+                                                                    <!-- <div class="card-header px-4">
+                                                                        <h5 class="card-title">USAGE HISTORY</h5>
+                                                                        <h6 class="card-subtitle text-muted">
+                                                                            This is the record of all your poing earnings.
+                                                                        </h6>
+                                                                    </div> -->
+                                                                    <div class="card-body ">
+                                                                        <form>
+                                                                            <div class="form-group">
+                                                                                <label for="title">Address Title</label>
+                                                                                <input type="text" class="form-control form-control-lg rounded-0 bg-transparent" placeholder="e.g. Home address" />
+                                                                            </div>
+
+                                                                            <div class="form-group">
+                                                                                <label for="Address">Address:</label>
+                                                                                <textarea class="form-control rounded-0 bg-transparent" rows="5" placeholder="Textarea"></textarea>
+                                                                            </div>
+                                                                            <div class="form-check">
+                                                                                <input class="form-check-input" type="checkbox" value="">
+                                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                                    Make this my primary address
+                                                                                </label>
+                                                                            </div>
+
+                                                                            <button type="submit" class="btn btn-outline-main rounded-0 my-2">
+                                                                                <i class="mr-2 align-vertical"
+                                                                                    data-feather="check"></i>
+                                                                                Add Address
+                                                                            </button>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
                                                     </div>
                                                 </div>
+
+
                                             </div>
-                                        </li>
-                                        <li class="list-group-item ">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <span class="">789, Rumuomasi Road, Rumu Avenue, Port-Harcourt,
-                                                        Nigeria</span>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="text-right d-block">
-                                                        <a href="#" class="text-muted pr-2 border-right">Edit </a>
-                                                        <a href="#" class="text-muted pl-2 ">Edit </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <!-- Security Tab -->
-                                <div class="tab-pane" id="vertical-icon-tab-3" role="tabpanel">
+                                <!-- Profile Picture Tab -->
+                                <div class="tab-pane" id="vertical-icon-tab-4" role="tabpanel">
                                     <div class="p-4">
-                                        <h4 class="tab-title mb-5">Passowrd </h4>
+                                        <h4 class="tab-title mb-5">Profile Picture </h4>
+
+                                        <div class="col-md-12">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="text-center">
+                                                    <img src="../img//avatars/user-avatar.png" width="100" height="100" class="rounded-circle" alt="Bosun Jones" />
+                                                    <div class="form-group mt-4">
+                                                        <div class="form-control form-control-lg p-0 rounded-0 thumbnail-container picture-setting">
+                                                            <div class="upload-icon">
+                                                                <img src="../img/upload-icon.png" height="80" width="80" />
+                                                                <small class="text-center d-block">
+                                                                    Drag and drop a file here or click
+                                                                </small>
+                                                            </div>
+                                                            <input class="form-control form-control-lg rounded-0 bg-light input-thumbnail" type="file">
+                                                        </div>
+                                                    </div>
+
+                                                    <button type="submit" class="btn btn-outline-main rounded-0 my-2">
+                                                        <i class="mr-2 align-vertical" data-feather="check"></i>
+                                                        Update Picture
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Security Tab -->
+                                <div class="tab-pane" id="vertical-icon-tab-5" role="tabpanel">
+                                    <div class="p-4">
+                                        <h4 class="tab-title mb-5">Password </h4>
                                         <form>
                                             <div class="row">
                                                 <div class="col-md-6 form-group">
                                                     <label for="current-password">Current Password:</label>
-                                                    <input class="form-control form-control-lg rounded-0 bg-light"
-                                                        type="password" />
+                                                    <input class="form-control form-control-lg rounded-0" type="password" />
                                                 </div>
                                                 <div class="col-md-6 form-group">
                                                     <label for="new-password">New Password:</label>
-                                                    <input class="form-control form-control-lg rounded-0 bg-light"
-                                                        type="text" />
+                                                    <input class="form-control form-control-lg rounded-0" type="text" />
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col form-group">
                                                     <label for="confirm-password">Confirm New Password:</label>
-                                                    <input class="form-control form-control-lg rounded-0 bg-light"
-                                                        type="text" />
+                                                    <input class="form-control form-control-lg rounded-0" type="text" />
                                                 </div>
                                             </div>
-                                            <button type="submit"
-                                                class="btn bg-main-color rounded-0 my-2 text-light px-4">
-                                                Submit
+                                            <button type="submit" class="btn btn-outline-main rounded-0 my-2">
+                                                <i class="mr-2 align-vertical" data-feather="check"></i>
+                                                Update Profile
                                             </button>
                                         </form>
                                     </div>
@@ -444,11 +751,11 @@
                     </div>
                 </div>
             </footer>
+            </div>
+
         </div>
 
-    </div>
-
-    <svg width="0" height="0" style="position:absolute">
+        <svg width="0" height="0" style="position:absolute">
         <defs>
             <symbol viewBox="0 0 512 512" id="ion-ios-pulse-strong">
                 <path
@@ -457,7 +764,7 @@
             </symbol>
         </defs>
     </svg>
-    <script src="../js/app.js"></script>
+        <script src="../js/app.js"></script>
 
 </body>
 

@@ -1,54 +1,94 @@
-.img-list-center{
+.img-list-center {
     display: block;
     margin: -60px auto 0;
 }
-.bg-main-color{
+
+.bg-main-color {
     background: linear-gradient(90deg, #F12711 0%, #FD7201 100%);
 }
-.cash-bold{
+
+.bg-orange {
+    background: #FD7201;
+}
+
+.bg-light {
+    background: #F4F7FC !important;
+}
+
+.bg-light-pink {
+    background: #FFF1E6;
+}
+
+.bg-white {
+    background: #fff !important;
+}
+
+.text-orange {
+    color: #F12A10;
+}
+
+.cash-bold {
     font-size: 2.5rem;
     color: #000;
     font-weight: 500;
 }
-.acct-tab .nav-link{
+
+.acct-tab .nav-link {
     background: #fff !important;
-    color: #000 !important; 
+    color: #000 !important;
 }
-.acct-tab .nav-item .active{
-    background: #F1F1F1 !important;
+
+.acct-tab .nav-item .active {
+    background: #FDEBE7 !important;
 }
-.ref-text-xlg{
+
+.ref-text-xlg {
     font-size: 2rem;
     font-weight: 500;
-
 }
-.bold-text{
+
+.bold-text {
     font-weight: 600 !important;
 }
 
-/* Customise thumbnail */
-.thumbnail-container{
-    position: relative; 
+.fw-500 {
+    font-weight: 500;
 }
-.input-thumbnail{
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+
+/* Customise thumbnail */
+
+.thumbnail-container {
+    position: relative;
+}
+
+.input-thumbnail {
     opacity: 0;
-      /* IE 8 */
+    /* IE 8 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-
     /* IE 5-7 */
-     filter: alpha(opacity=0);
-
+    filter: alpha(opacity=0);
     /* Netscape */
     -moz-opacity: 0;
-
-     /* Safari 1.x */
+    /* Safari 1.x */
     -khtml-opacity: 0;
 }
-.thumbnail-container, .input-thumbnail{
+
+.thumbnail-container,
+.input-thumbnail {
     height: 200px;
     cursor: pointer;
 }
-.upload-icon{
+
+.upload-icon {
     position: absolute;
     top: 46px;
     left: 50%;
@@ -57,72 +97,183 @@
     width: 80px;
 }
 
+
 /* Custom checkbox on image */
-.check-image .custom-control-label{
+
+.check-image .custom-control-label {
     position: unset !important;
 }
-.check-image .custom-control-label:after, .check-image .custom-control-label:before{
+
+.check-image .custom-control-label:after,
+.check-image .custom-control-label:before {
     position: absolute !important;
     top: .5rem !important;
     right: .5rem !important;
     left: auto !important;
 }
 
-.first-list .list-group-item:last-child{
+.first-list .list-group-item:last-child {
     border-bottom: 0px;
 }
 
+
 /* Custom multiple input */
-.custom-multiple-input .select2-container{
+
+.custom-multiple-input .select2-container {
     width: 100% !important;
     display: block;
     background-color: #e9ecef!important;
 }
-.multiple-input-n-height .select2-container .select2-selection--multiple{
+
+.multiple-input-n-height .select2-container .select2-selection--multiple {
     height: 41px !important;
-    padding:.3rem .5rem !important;
+    padding: .3rem .5rem !important;
 }
-.custom-multiple-input .select2-container .select2-selection--multiple{
+
+.custom-multiple-input .select2-container .select2-selection--multiple {
     background-color: #e9ecef!important;
     border: 1px solid #ced4da;
     padding: .6rem 1rem;
     height: 150px;
 }
-.custom-multiple-input .select2-container--bootstrap4 .select2-selection--multiple .select2-selection__choice{
+
+.custom-multiple-input .select2-container--bootstrap4 .select2-selection--multiple .select2-selection__choice {
     padding: .45rem .7rem !important;
-    background:#ffffffe0 !important ;
+    background: #ffffffe0 !important;
     margin: 0 .4rem .4rem 0;
 }
 
-.slider-container {    
+.slider-container {
     max-width: 1000px;
     padding: 2rem 3rem;
     background: #e6e6e6;
     margin: 2rem auto 0 auto;
     overflow: hidden;
-    border-radius: 5px;    
-    position:relative;
-
+    border-radius: 5px;
+    position: relative;
 }
+
 .slider-container:before {
     content: '.slider-container';
     position: absolute;
     left: 0;
 }
 
-@media screen and (max-width:600px){
-    .cash-bold{
+@media screen and (max-width:600px) {
+    .cash-bold {
         font-size: 1.5rem;
     }
     /* justify right for mobile screen */
-    .justify-right-sm{
+    .justify-right-sm {
         justify-content: start !important;
     }
     /* Vendor dashboard>>>>>>>>>>Single-order */
-    .second-list{
+    .second-list {
         padding-right: 1rem !important;
     }
-    .first-list .list-group-item .row p:last-child, .second-list .list-group-item .row p:last-child{
+    .first-list .list-group-item .row p:last-child,
+    .second-list .list-group-item .row p:last-child {
         text-align: left !important;
     }
+}
+
+
+/* badge color */
+
+.badge-danger {
+    background: #F12A10;
+}
+
+.badge-warning {
+    background: #F2B006;
+}
+
+.badge-orange {
+    background: #FD7201;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.page-item.active .page-link {
+    background: #F12A10;
+    border-color: #F12A10;
+}
+
+table a:hover {
+    color: #F12A10;
+}
+
+.btn-outline-main {
+    border: 2px solid #F12A10;
+}
+
+
+/* .accordion .card .collapsed {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0fe";
+    font-weight: 600;
+} */
+
+.modal .modal-body th {
+    font-weight: 600;
+}
+
+.modal .modal-body td {
+    text-align: right;
+}
+
+.modal .modal-body td,
+.modal .modal-body th {
+    padding: 1rem;
+}
+
+.modal .breadcrumb-item+.breadcrumb-item:before,
+.modal .breadcrumb-item a,
+.modal .breadcrumb-item.active {
+    color: #777777;
+}
+
+.modal .table-bordered,
+.table-bordered td,
+.table-bordered th {
+    border-color: #444444;
+}
+
+.comment-tab .nav-tabs .nav-link {
+    color: #fff;
+}
+
+.payment-tab .nav-tabs .nav-link:hover,
+.tab .nav-tabs .nav-link:hover:not(.active) {
+    color: #343a40;
+}
+
+.payment-tab .nav-tabs .nav-link.active,
+.payment-tab .paginaation .next .page-link,
+.payment-tab .paginaation .previous .page-link {
+    background: #F4F7FC !important;
+}
+
+.picture-setting .upload-icon {
+    margin-left: -120px;
+    width: 240px;
+}
+
+.tab-vertical .payment-tab .nav-tabs {
+    float: unset;
+    flex-direction: unset;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.interest-tab .form-group {
+    position: absolute;
+    left: 20px;
+    bottom: -10px;
+    padding: 0 .5rem;
+    background: #fff;
 }

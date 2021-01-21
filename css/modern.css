@@ -1,4 +1,5 @@
 /* @import url(https://fonts.googleapis.com/css?family=Hind+Vadodara:400,500&amp;display=swap); */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url(https://indestructibletype.com/fonts/Jost.css);
 
@@ -4161,7 +4162,7 @@ input[type=submit].btn-block {
     opacity: 0
 }
 
-.custom-control-input:checked~.custom-control-label:before { 
+.custom-control-input:checked~.custom-control-label:before {
     color: #fff;
     border-color: linear-gradient(90deg, #F12711 0%, #FD7201 100%);
     background: linear-gradient(90deg, #F12711 0%, #FD7201 100%);
@@ -13315,7 +13316,7 @@ a.card {
 
 .navbar .nav-item a:focus {
     outline: 0;
-    background:#F12711;
+    background: #F12711;
 }
 
 .navbar .nav-item .dropdown-menu {
@@ -13552,8 +13553,8 @@ a.sidebar-link svg {
 
 .sidebar-item.active .sidebar-link:hover,
 .sidebar-item.active>.sidebar-link {
-    color: #212529;
-    background: #e9ecef
+    color: #444444;
+    background: #FDEBE7;
 }
 
 .sidebar-item.active .sidebar-link:hover .fab,
@@ -13858,7 +13859,8 @@ a.sidebar-link svg {
 }
 
 .table>tbody>tr>td {
-    vertical-align: middle
+    vertical-align: middle;
+    font-size: 14px;
 }
 
 .card>.dataTables_wrapper .table.dataTable {
@@ -13884,7 +13886,7 @@ a.sidebar-link svg {
 
 .tab .nav-tabs .nav-link {
     background: transparent;
-    color: #fff;
+    color: #444444;
     padding: .75rem 1rem;
     border: 0
 }
@@ -14165,7 +14167,8 @@ a.sidebar-link svg {
 }
 
 .tab-vertical .tab-content {
-    overflow: auto
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 .text-sm {
