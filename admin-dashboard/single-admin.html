@@ -23,6 +23,186 @@
 </head>
 
 <body>
+    <!-- update profile picture Admin Modal -->
+    <div class="modal fade" id="pictureAdmin" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title fw-600">Update Profile Picture</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="text-center py-3">
+                        <h5 class="fw-600 mb-3">Current Photo</h5>
+                        <img src="../img/photos/if-beauty&health.png" width="180" height="180" class="rounded-circle object-fit-cover" />
+                        <div class="form-group mt-3">
+                            <div class="form-control form-control-lg p-0 rounded-0 thumbnail-container picture-setting">
+                                <div class="upload-icon">
+                                    <img src="../img/upload-icon.png" height="80" width="80" />
+                                    <small class="text-center d-block">
+                                        Drag and drop a file here or click
+                                    </small>
+                                </div>
+                                <input class="form-control form-control-lg rounded-0 bg-light input-thumbnail" type="file">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-outline-main rounded-0 my-2">
+                            <i class="mr-2 align-vertical" data-feather="check"></i>
+                            Update Picture
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- update Admin Modal -->
+    <div class="modal fade" id="updateAdmin" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title">Update "Bosun Jones"</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <form class="py-1">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="firstName">First Name:</label>
+                                <input class="form-control form-control-lg rounded-0" type="text">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="firstName">Last Name:</label>
+                                <input class="form-control form-control-lg rounded-0" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="firstName">Email Address:</label>
+                                <input class="form-control form-control-lg rounded-0" type="email">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="firstName">Phone Number:</label>
+                                <input class="form-control form-control-lg rounded-0" type="tel">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="firstName">Sex:</label>
+                            <select class="form-control form-control-lg rounded-0">
+                                <option class="text-sm">Male</option>
+                                <option class="text-sm">Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName">Country:</label>
+                            <select class="form-control form-control-lg rounded-0">
+                                <option class="text-sm" disabled>Select Country</option>
+                                <option class="text-sm">Nigeria</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="firstName">State:</label>
+                                <select class="form-control form-control-lg rounded-0">
+                                    <option class="text-sm" disabled>Select State</option>
+                                    <option class="text-sm">Lagos</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="firstName">City:</label>
+                                <select class="form-control form-control-lg rounded-0">
+                                    <option class="text-sm" disabled>Select City</option>
+                                    <option class="text-sm">Ikeja</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName">About Admin:</label>
+                            <textarea class="form-control rounded-0" rows="7" placeholder=""></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="formFileLg" class="form-label">Profile Picture</label>
+                            <input class="form-control form-control-lg rounded-0 mb-3" type="file">
+                            <div class="">
+                                <img src="../img/photos/if-beauty&health.png" width="120" height="120" class=" object-fit-cover" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="firstName">Facebook Profile:</label>
+                                <input class="form-control form-control-lg rounded-0" type="text">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="firstName">Twitter Handle:</label>
+                                <input class="form-control form-control-lg rounded-0" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="firstName">Instagram Handle:</label>
+                                <input class="form-control form-control-lg rounded-0" type="text">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="firstName">TikTok Handle:</label>
+                                <input class="form-control form-control-lg rounded-0" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="firstName">YouTube Page:</label>
+                                <input class="form-control form-control-lg rounded-0" type="text">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="firstName">LinkedIn Profile:</label>
+                                <input class="form-control form-control-lg rounded-0" type="text">
+                            </div>
+                        </div>
+                        <!-- Input chip, separated with comma -->
+                        <div class="form-group">
+                            <label for="firstName">Role:</label>
+                            <select class="form-control form-control-lg rounded-0">
+                                <option class="text-sm">Administrator</option>
+                                <option class="text-sm">Author</option>
+                                <option class="text-sm">Stories</option>
+                                <option class="text-sm">Administrator</option>
+                            </select>
+                        </div>
+
+                        <div class="row mx-0 ">
+                            <div class="card shadow-none w-100 bg-light-pink">
+                                <div class="card-header px-4">
+                                    <h5 class="card-title bold-text">ADMINISTRATION</h5>
+                                    <small>This user will have access to every module and feature in the system.</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName">Status:</label>
+                            <select class="form-control form-control-lg rounded-0">
+                                <option class="text-sm">Active</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-outline-main rounded-0 my-2">
+                            <i class="mr-2 align-vertical" data-feather="check"></i>
+                            Update Account
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="splash active">
         <div class="splash-icon"></div>
@@ -138,7 +318,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="sidebar-item active">
+                    <li class="sidebar-item">
                         <a href="#event" data-toggle="collapse" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="star"></i>
                             <span class="align-middle">Events</span>
@@ -233,17 +413,20 @@
                             <span class="align-middle">Referral System</span>
                         </a>
                     </li>
-                    <li class="sidebar-item">
+                    <li class="sidebar-item active">
                         <a href="#author" data-toggle="collapse" class="sidebar-link collapsed">
                             <i class="align-middle" data-feather="users"></i>
                             <span class="align-middle">Users / Authors</span>
                         </a>
-                        <ul id="author" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+                        <ul id="author" class="sidebar-dropdown list-unstyled show" data-parent="#sidebar">
                             <li class="sidebar-item">
-                                <a class="sidebar-link" href="#">Author 1</a>
+                                <a class="sidebar-link" href="admin.html">All Admin - Authors</a>
                             </li>
                             <li class="sidebar-item">
-                                <a class="sidebar-link" href="#">Author 2</a>
+                                <a class="sidebar-link" href="create-single-admin.html">New Admin - Authors</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" href="admin-access.html">Roles and Permissions</a>
                             </li>
                         </ul>
                     </li>
@@ -276,13 +459,11 @@
                 <div class="navbar-collapse collapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown ml-lg-2">
-                            <a class="nav-link dropdown-toggle position-relative" href="#" id="alertsDropdown"
-                                data-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle position-relative" href="#" id="alertsDropdown" data-toggle="dropdown">
                                 <i class="align-middle fas fa-bell"></i>
                                 <span class="indicator"></span>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0"
-                                aria-labelledby="alertsDropdown">
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
                                 <div class="dropdown-menu-header">
                                     4 New Notifications
                                 </div>
@@ -294,8 +475,7 @@
                                             </div>
                                             <div class="col-10">
                                                 <div class="text-dark">Order Completed</div>
-                                                <div class="text-muted small mt-1">Your order #1000 has been processed
-                                                    successfully.
+                                                <div class="text-muted small mt-1">Your order #1000 has been processed successfully.
                                                 </div>
                                                 <div class="text-muted small mt-1">2h ago</div>
                                             </div>
@@ -308,8 +488,7 @@
                                             </div>
                                             <div class="col-10">
                                                 <div class="text-dark">Order Cancelled</div>
-                                                <div class="text-muted small mt-1">Your order #1000 has been processed
-                                                    successfully.
+                                                <div class="text-muted small mt-1">Your order #1000 has been processed successfully.
                                                 </div>
                                                 <div class="text-muted small mt-1">12hours ago</div>
                                             </div>
@@ -322,8 +501,7 @@
                                             </div>
                                             <div class="col-10">
                                                 <div class="text-dark">Order Completed</div>
-                                                <div class="text-muted small mt-1">Your order #1000 has been processed
-                                                    successfully.
+                                                <div class="text-muted small mt-1">Your order #1000 has been processed successfully.
                                                 </div>
                                                 <div class="text-muted small mt-1">2h ago</div>
                                             </div>
@@ -336,8 +514,7 @@
                                             </div>
                                             <div class="col-10">
                                                 <div class="text-dark">Order Cancelled</div>
-                                                <div class="text-muted small mt-1">Your order #1000 has been processed
-                                                    successfully.
+                                                <div class="text-muted small mt-1">Your order #1000 has been processed successfully.
                                                 </div>
                                                 <div class="text-muted small mt-1">2h ago</div>
                                             </div>
@@ -350,10 +527,8 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown ml-lg-2">
-                            <a class="nav-link dropdown-toggle position-relative" href="#" id="userDropdown"
-                                data-toggle="dropdown">
-                                <img src="../img/avatars/ife.jpg" width="25" height="25"
-                                    class="img-fluid rounded-circle mb-2" alt="Ifeoluwa Agbolahan" />
+                            <a class="nav-link dropdown-toggle position-relative" href="#" id="userDropdown" data-toggle="dropdown">
+                                <img src="../img/avatars/ife.jpg" width="25" height="25" class="img-fluid rounded-circle mb-2" alt="Ifeoluwa Agbolahan" />
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#"><i class="align-middle mr-1 fas fa-fw fa-user"></i>
@@ -396,226 +571,148 @@
                             <ul class="list-group mb-5 w-100 first-list shadow">
                                 <li class="list-group-item">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="pt-2 bold-text">SINGLE ADMIN</h4>
-                                        <a class="btn bg-main-color text-light rounded-0 my-1">
-                                            Edit Admin
+                                        <h5 class="pt-2 bold-text">SINGLE ADMIN</h5>
+                                        <a class="btn btn-outline-main rounded-0" data-toggle="modal" data-target="#updateAdmin">
+                                            <i class="mr-1 align-middle" data-feather="edit-3"></i> Edit profile
                                         </a>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <p class="col-md-6 mb-0">First Name:</p>
+                                        <p class="col-md-6 mb-0 fw-600">First Name:</p>
                                         <p class="col-md-6 text-right mb-0">Dele</p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <p class="col-md-6 mb-0">Last Name:</p>
+                                        <p class="col-md-6 mb-0 fw-600">Last Name:</p>
                                         <p class="col-md-6 text-right mb-0">Fireboy</p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <p class="col-md-6 mb-0">Email Address:</p>
+                                        <p class="col-md-6 mb-0 fw-600">Email Address:</p>
                                         <p class="col-md-6 text-right mb-0">delefire@gmail.com</p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <p class="col-md-6 mb-0">Phone Number::</p>
+                                        <p class="col-md-6 mb-0 fw-600">Phone Number::</p>
                                         <p class="col-md-6 text-right mb-0">+2393893953409</p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <p class="col-md-6 mb-0">Sex:</p>
+                                        <p class="col-md-6 mb-0 fw-600">Sex:</p>
                                         <p class="col-md-6 text-right mb-0">Male</p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <p class="col-md-6 mb-0">Country:</p>
+                                        <p class="col-md-6 mb-0 fw-600">Country:</p>
                                         <p class="col-md-6 text-right mb-0">Nigeria</p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <p class="col-md-6 mb-0">City:</p>
+                                        <p class="col-md-6 mb-0 fw-600">City:</p>
                                         <p class="col-md-6 text-right mb-0"> Ikeja</p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <p class="col-md-6 mb-0">State:</p>
+                                        <p class="col-md-6 mb-0 fw-600">State:</p>
                                         <p class="col-md-6 text-right mb-0"> Lagos</p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <p class="col-md-6 mb-0">Status:</p>
+                                        <p class="col-md-6 mb-0 fw-600">Status:</p>
                                         <p class="col-md-6 text-right mb-0"> Active</p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <p class="col-md-6 mb-0">Permissions/Access:</p>
+                                        <p class="col-md-6 mb-0 fw-600">Role:</p>
                                         <p class="col-md-6 text-right mb-0"> Administrator</p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <p class="col-md-6 mb-0">Facebook:</p>
-                                        <p class="col-md-6 text-right mb-0"> @delefireboy</p>
+                                        <p class="col-md-6 mb-0 fw-600">Facebook:</p>
+                                        <p class="col-md-6 text-right mb-0 text-orange">
+                                            https://facebook.com/delefireboy
+                                        </p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <p class="col-md-6 mb-0">Twitter:</p>
-                                        <p class="col-md-6 text-right mb-0"> @delefireboy</p>
+                                        <p class="col-md-6 mb-0 fw-600">Twitter:</p>
+                                        <p class="col-md-6 text-right mb-0 text-orange">
+                                            https://twitter.com/delefireboy
+                                        </p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <p class="col-md-6 mb-0">Instagram:</p>
-                                        <p class="col-md-6 text-right mb-0"> @delefireboy</p>
+                                        <p class="col-md-6 mb-0 fw-600">Instagram:</p>
+                                        <p class="col-md-6 text-right mb-0 text-orange">
+                                            https://instagram.com/delefireboy
+                                        </p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <p class="col-md-6 mb-0">LinkedIn:</p>
-                                        <p class="col-md-6 text-right mb-0"> @delefireboy</p>
+                                        <p class="col-md-6 mb-0 fw-600">LinkedIn:</p>
+                                        <p class="col-md-6 text-right mb-0 text-orange">
+                                            https://linkedin.com/delefireboy
+                                        </p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <p class="col-md-6 mb-0">TikTok:</p>
-                                        <p class="col-md-6 text-right mb-0"> @delefireboy</p>
+                                        <p class="col-md-6 mb-0 fw-600">TikTok:</p>
+                                        <p class="col-md-6 text-right mb-0 text-orange">
+                                            https://tiktok.com/delefireboy
+                                        </p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
-                                        <p class="col-md-6 mb-0">Youtube:</p>
-                                        <p class="col-md-6 text-right mb-0"> @delefireboy</p>
+                                        <p class="col-md-6 mb-0 fw-600">Youtube:</p>
+                                        <p class="col-md-6 text-right mb-0 text-orange">
+                                            https://youtube.com/delefireboy
+                                        </p>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-md-4">
-                            <div class="card shadow w-100">
+                            <div class="card shadow w-100 mb-4">
+                                <div class="card-header border-bottom py-3 d-flex justify-content-between">
+                                    <h5 class="mt-1 mb-0 bold-text">PROFILE PICTURE</h5>
+                                    <button class="btn btn-outline-main rounded-0" data-toggle="modal" data-target="#pictureAdmin">
+                                        <i class="mr-1 align-middle" data-feather="edit-3"></i>
+                                        Manage
+                                    </button>
+                                </div>
+                                <div class="card-body text-center py-4">
+                                    <img src="../img/photos/if-beauty&health.png" width="200" height="200" class="rounded-circle object-fit-cover" />
+                                </div>
+                            </div>
+
+                            <div class="card shadow w-100 mb-4">
                                 <div class="card-header border-bottom py-3">
-                                    <h4 class="my-1 bold-text">ADMIN HISTORY</h4>
+                                    <h5 class="mt-1 bold-text mb-0">ABOUT ADMIN</h5>
                                 </div>
                                 <div class="card-body ">
-                                  <ul class="list-group mb-5 w-100 text-sm">
-                                        <li class="list-group-item border-0  px-0">
-                                            <p class="mb-1 bold-text">LAST LOGIN </p>
-                                            <div class="row">
-                                                <div class="col-md-7">22/02/2020 16:14</div>
-                                                <div class="col-md-5">MacOS (Safari)</div>
-                                            </div>
-                                        </li>
-                                        <div>
-                                            <li class="list-group-item border-0 px-0  mb-0">
-                                                <div class="row">
-                                                    <div class="col-md-7">DATE</div>
-                                                    <div class="col-md-5">DEVICE</div>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item border-0  px-0">
-                                                <div class="row">
-                                                    <div class="col-md-7">22/02/2020 16:14</div>
-                                                    <div class="col-md-5">MacOS (Safari)</div>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item border-0  px-0">
-                                                <div class="row">
-                                                    <div class="col-md-7">22/02/2020 16:14</div>
-                                                    <div class="col-md-5">MacOS (Safari)</div>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item border-0  px-0">
-                                                <div class="row">
-                                                    <div class="col-md-7">22/02/2020 16:14</div>
-                                                    <div class="col-md-5">MacOS (Safari)</div>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item border-0  px-0">
-                                                <div class="row">
-                                                    <div class="col-md-7">22/02/2020 16:14</div>
-                                                    <div class="col-md-5">MacOS (Safari)</div>
-                                                </div>
-                                            </li>
-                                        </div>
-                                    </ul>
-
-                           
+                                    <p class="mb-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
                                 </div>
                             </div>
-                            <div>
-                                    <img src="../img/avatars/avatar-4.jpg" class="w-100">
-                            </div>
                         </div>
                     </div>
-
-                    <div class="row mx-0 pb-5 mb-5">
-                        <div class="card shadow-none w-100">
-                            <div class="card-header px-4">
-                                <h5 class="card-title bold-text">ACTIVITY LOG</h5>
-                                <h6 class="card-subtitle text-muted">
-                                    This is the activity log of bosun Jones
-                                </h6>
-                            </div>
-                            <div class="card-body">
-                                <table id="datatables-basic-one" class="table table-hover  text-sm" style="width:100%">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Date & Time</th>
-                                            <th>Author</th>
-                                            <th> Role </th>
-                                            <th> IP Address </th>
-                                            <th>Actions</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td> 22/01/2020 2:17PM</td>
-                                            <td>
-                                                <img src="../img//photos/unsplash-1.jpg" height="35" width="35"
-                                                    class="rounded-circle mr-2" />
-                                                Bosun Jones
-                                            </td>
-                                            <td> Administrator </td>
-                                            <td> 11.566.64.12 </td>
-                                            <td> lorem ipsum dor sit amet,lorem ipsum</td>
-                                            <!-- <td>
-                                                <a class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown"
-                                                    id="moreDropdown">
-                                                    More
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right"
-                                                    aria-labelledby="moreDropdown">
-                                                    <a class="dropdown-item border-bottom" href="#">
-                                                        Manage Episodes
-                                                    </a>
-                                                    <a class="dropdown-item border-bottom" href="#">
-                                                        Manage Deals
-                                                    </a>
-                                                    <a class="dropdown-item" href="#">
-                                                        Delete
-                                                    </a>
-                                                </div>
-                                            </td> -->
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                    </div>
-
-
 
 
             </main>
@@ -646,12 +743,12 @@
                     </div>
                 </div>
             </footer>
+            </div>
+
         </div>
 
-    </div>
 
-
-    <svg width="0" height="0" style="position:absolute">
+        <svg width="0" height="0" style="position:absolute">
         <defs>
             <symbol viewBox="0 0 512 512" id="ion-ios-pulse-strong">
                 <path
@@ -660,23 +757,23 @@
             </symbol>
         </defs>
     </svg>
-    <script src="../js/app.js"></script>
-    <!-- Jquery for data-table -->
-    <script>
-        $(function () {
-            // Datatables basic
-            $('#datatables-basic, #datatables-basic-one, #datatables-basic-two, #datatables-basic-three, #datatables-basic-four, #datatables-basic-five, #datatables-basic-six').DataTable({
-                responsive: true
+        <script src="../js/app.js"></script>
+        <!-- Jquery for data-table -->
+        <script>
+            $(function() {
+                // Datatables basic
+                $('#datatables-basic, #datatables-basic-one, #datatables-basic-two, #datatables-basic-three, #datatables-basic-four, #datatables-basic-five, #datatables-basic-six').DataTable({
+                    responsive: true
+                });
+                // Datatables with Buttons
+                var datatablesButtons = $('#datatables-buttons').DataTable({
+                    lengthChange: !1,
+                    buttons: ["copy", "print"],
+                    responsive: true
+                });
+                datatablesButtons.buttons().container().appendTo("#datatables-buttons_wrapper .col-md-6:eq(0)")
             });
-            // Datatables with Buttons
-            var datatablesButtons = $('#datatables-buttons').DataTable({
-                lengthChange: !1,
-                buttons: ["copy", "print"],
-                responsive: true
-            });
-            datatablesButtons.buttons().container().appendTo("#datatables-buttons_wrapper .col-md-6:eq(0)")
-        });
-    </script>
+        </script>
 
 </body>
 
